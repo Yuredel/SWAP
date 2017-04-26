@@ -39,7 +39,7 @@ figura3: Versión de apache que ha sido instalada
 ### Configuración de las Interfaces de red
 Aunque las herramientas web están funcionando, la configuración de red, no está finalizada. Lo primero será cambiar la configuración de la red de la herramienta de virtualización, en este caso, VirtualBox.
 
-Con la máquina apagada, y en la sección de configuración de las interfaces de red nos aseguramos que  nuestro primer adaptador sea del tipo * NAT*, y añadiremos un segundo adaptador del tipo *Red Interna*. Debemos fijarnos en el nombre de la red (inet) ya que cuando creemos una segunda máquina, el nombre de la red debe coincidir para que la comunicación entre ambas sea posible.
+Con la máquina apagada, y en la sección de configuración de las interfaces de red nos aseguramos que  nuestro primer adaptador sea del tipo *NAT*, y añadiremos un segundo adaptador del tipo *Red Interna*. Debemos fijarnos en el nombre de la red (inet) ya que cuando creemos una segunda máquina, el nombre de la red debe coincidir para que la comunicación entre ambas sea posible.
 
 Al ejecutar el comando *ifconfig*, podemos observara que la interfaz que no está configurada es la que recibe el nombre enp0s8.
 
