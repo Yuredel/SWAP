@@ -4,7 +4,7 @@ La instalación de las máquinas de UbuntuServer16, lo haré sobre VirtualBox.
 En un momento determinado de la instalación debemos indicarle que instale LAMP.   
 LAMP es el acrónimo usado para describir un sistema de infraestructura de internet que usa las siguientes herramientas:Apache, MySQL y PHP. La combinación de estas tecnologías es usada principalmente para definir la infraestructura de un servidor web, utilizando un paradigma de programación para el desarrollo.
 
-![Imagen][im1]
+![Imagen][im1]  
 figura1: Instalación de LAMP en la máquina de UbuntuServer16
 
 
@@ -18,7 +18,7 @@ Podemos comprobar la versión de Apache que ha sido instalada en nuestra máquin
 
 <code> apache2 -v <code>
 
-![Imagen][im2]
+![Imagen][im2]  
 figura2: Versión de apache que ha sido instalada
 
  Esto sirve como comprobación de que el servidor web ha sido instalada.Otra forma sería comprobarlo mediante el comando ***ps***
