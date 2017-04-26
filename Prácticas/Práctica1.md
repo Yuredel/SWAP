@@ -19,15 +19,13 @@ Una vez realizada la instalación, he instalado, mediante el siguiente comando, 
 
 Podemos comprobar la versión de Apache que ha sido instalada en nuestra máquina mediante el comando:
 
-
-
 <code> apache2 -v <code>
 
 ![Imagen][im2]  
 
 figura2: Versión de apache que ha sido instalada
 
- Esto sirve como comprobación de que el servidor web ha sido instalada.Otra forma sería comprobarlo mediante el comando ***ps***
+Esto sirve como comprobación de que el servidor web ha sido instalada.Otra forma sería comprobarlo mediante el comando ***ps***
 PS se utiliza para obtener una instantánea de los procesos en el sistema , algunas de sus opciones son:
 * a: E liminar la restricción BSD "only yourself" para agregar procesos de otros usuarios.
 * u: Utilizar el formato orientado al usuario.
@@ -73,7 +71,7 @@ plano, crearemos el archivo HTML llamado prueba.html en el directorio /var/www/h
 
 Recordemos que la dirección ip de la máquina es 192.168.1.101, y el nombre del archivo es prueba.html. En la siguiente imagen podemos ver el resultado dicha ejecución, es el contenido completo del archivo.
 
-![Imagen] [im5]
+![Imagen][im5]
 figura5: Ejecución del comando CURL
 
 
