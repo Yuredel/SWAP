@@ -14,11 +14,17 @@ Una vez realizada la instalación, he instalado, mediante el siguiente comando, 
 <code>  apt-get install --no-install-recommends lubuntu-desktop <code>
 
 
+
+
+
 Podemos comprobar la versión de Apache que ha sido instalada en nuestra máquina mediante el comando:
+
+
 
 <code> apache2 -v <code>
 
 ![Imagen][im2]  
+
 figura2: Versión de apache que ha sido instalada
 
  Esto sirve como comprobación de que el servidor web ha sido instalada.Otra forma sería comprobarlo mediante el comando ***ps***
