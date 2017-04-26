@@ -11,11 +11,11 @@ figura1: Instalación de LAMP en la máquina de UbuntuServer16
 #### Comprobación de la instalación
 Una vez realizada la instalación, he instalado, mediante el siguiente comando, un entorno gráfico para facilitar el futuro trabajo con las máquinas:
 
-<code>  apt-get install --no-install-recommends lubuntu-desktop
+`apt-get install --no-install-recommends lubuntu-desktop`
 
 Podemos comprobar la versión de Apache que ha sido instalada en nuestra máquina mediante el comando:
 
-<code> apache2 -v
+` apache2 -v`
 
 ![Imagen][im2]  
 
@@ -29,7 +29,7 @@ PS se utiliza para obtener una instantánea de los procesos en el sistema , algu
 
 Usando estas opciones del comando PS, combinadas con el comando grep nos permitirá ver los procesos de apache que ese están ejecutando en la maquina. Ejecutamos pues, la siguiente combinación de comandos que nos proporcionará la salida que se muestra en la imagen a continuación.
 
- <code> ps aux | grep apache  
+ `ps aux | grep apache`
 
 
 ![Imagen][im3]
@@ -66,7 +66,7 @@ Una vez que tengamos las máquinas instaladas y los servidores LAMP configurados
 comprobaremos  que  Apache  está  funcionando.  Para  ello,  usando  un  editor  de  texto
 plano, crearemos el archivo HTML llamado prueba.html en el directorio /var/www/html, luego ejecutaremos el comando curl, para lo cual usaremos la interfaz recientemente configurada. Tan sólo deberemos escribir en la terminal:
 
-<code> curl http:// direcciónInterfaz/nombrefichero.html <code>
+` curl http:// direcciónInterfaz/nombrefichero.html`
 
 Recordemos que la dirección ip de la máquina es 192.168.1.101, y el nombre del archivo es prueba.html. En la siguiente imagen podemos ver el resultado dicha ejecución, es el contenido completo del archivo.
 
