@@ -35,7 +35,8 @@ Usando estas opciones del comando PS, combinadas con el comando grep nos permiti
 
  <code> ps aux | grep apache <code>
 
- ![Imagen][im3]
+![Imagen][im3]
+
 figura3: Versión de apache que ha sido instalada
 
 ### Configuración de las Interfaces de red
@@ -59,6 +60,7 @@ broadcast 192.168.1.255
 Repetiremos el proceso en la configuración de la segunda máquina, sólo que cambiaremos la dirección(address), por otra que no esté en uso, por ejemplo la 192.168.1.100.
 
 ![Imagen][im4]
+
 figura4: Ejecución de *ifconfig* una vez configurada la interfaz
 
 ### Ejecución del comando CURL mediante la interfaz configurada
@@ -72,6 +74,7 @@ plano, crearemos el archivo HTML llamado prueba.html en el directorio /var/www/h
 Recordemos que la dirección ip de la máquina es 192.168.1.101, y el nombre del archivo es prueba.html. En la siguiente imagen podemos ver el resultado dicha ejecución, es el contenido completo del archivo.
 
 ![Imagen][im5]
+
 figura5: Ejecución del comando CURL
 
 
