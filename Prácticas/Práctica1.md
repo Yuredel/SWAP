@@ -33,7 +33,8 @@ PS se utiliza para obtener una instantánea de los procesos en el sistema , algu
 
 Usando estas opciones del comando PS, combinadas con el comando grep nos permitirá ver los procesos de apache que ese están ejecutando en la maquina. Ejecutamos pues, la siguiente combinación de comandos que nos proporcionará la salida que se muestra en la imagen a continuación.
 
- <code> ps aux | grep apache <code>
+ <code> ps aux | grep apache  <code>
+ 
 
 ![Imagen][im3]
 
