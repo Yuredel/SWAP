@@ -4,8 +4,7 @@
 ##### Escenario
 Disponemos dos máquinas virtualizadas que disponen de UbuntuServer16 como sistema operativo.En la práctica anterior, configuramos las interfaces de red para que cada máquina dispusiera de una ip diferent. Partiendo de esta casuística, podremos utilizar las funciones que nos proporciona la herramienta ssh para comunicar ambas máquinas.
 ##### Probar el funcionamiento de la copia  de archivos por ssh
-###### Comandos para la creación de un archivo comprimido en una máquina remota
-Usaremos el comando tar para comprimir el archivo deseado, de la siguiente manera:  
+aUsaremos el comando tar para comprimir el archivo deseado, de la siguiente manera:  
 
 ` tar czf - directorio | ssh equipo\_destino 'cat > ~/tar.tgz' `
 
@@ -31,13 +30,13 @@ Probaremos el funcionamiento clonando una carpeta de la máquina origen(192.168.
 
 `rsync -avz -e ssh 192.168.1.101:/var/www/html/ /var/www/html/ `
 
-El protocolo *** ssh *** nos pedirá la contraseña para ejecutar la operación, de la misma forma en que lo hizo las anteriores veces que utilizamos este recurso.    
+El protocolo ***ssh*** nos pedirá la contraseña para ejecutar la operación, de la misma forma en que lo hizo las anteriores veces que utilizamos este recurso.    
 Una vez hayamos introducido la contraseña correctamente podremos comprobar que el contenido del directorio de la máquina origen ha quedado clonado en la máquina destino.
 
 ![Imagen][im2]  
 figura2: Ejecución de rsync
 
-La herramienta *** rsync *** permite multitud de parámetros para seleccionar que archivos copiar y que archivos no, por ejemplo. A continuación se muestra una ejecución del comando rsync donde se hace una copia del directorio /var/www/html/ pero excluyendo:
+La herramienta ***rsync*** permite multitud de parámetros para seleccionar que archivos copiar y que archivos no, por ejemplo. A continuación se muestra una ejecución del comando rsync donde se hace una copia del directorio /var/www/html/ pero excluyendo:
 * /var/www/html/error
 * /var/www/html/stats
 * /var/www/html/files/pictures
