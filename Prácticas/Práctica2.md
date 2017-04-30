@@ -65,6 +65,7 @@ Obtendremos como repuesta la siguiente salida que se muestra a continuación:
 ![Imagen][im4]
 
 ![Imagen][im5]
+
 figuras 4 y 5: creación de la clave pública
 
 ![Imagen][im6]
