@@ -71,10 +71,31 @@ figuras 4 y 5: creación de la clave pública
 figura6: Ejecución del comando *ssh* sin contraseña
 
 ### Programar tareas con  ***CRONTAB***
+ En el sistema operativo Unix, ***cron*** es un administrador regular de procesos en segundo plano (demonio) que ejecuta procesos o guiones a intervalos regulares (por ejemplo, cada minuto, día, semana o mes). Los procesos que deben ejecutarse y la hora en la que deben hacerlo se especifican en el fichero crontab.  
+Los siete campos están organizados de la siguiente manera:
+* Minuto: Indica el minuto de la hora en que la instrucción será ejecutada.
+* Hora: Indica el día del mes en que se quiere ejecutar la instrucción.
+* Día del Mes: Indica el día del mes en que se quiere ejecutar la instrucción.
+* Mes: Indica mediante un entero entre el 1 y el 12, el número del mes en que será ejecutada la instrucción.
+* Día de la Semana: Indica el Usuario que ejecuta la instrucción.
+* Instrucción: comando y parámetros que se ejecutarán llegado el momento.
+
+Por tanto:
+
+`* * * * * * comando`
+
+representará una tarea que se realiza cada minuto de cada día de cada mes.
+
+Como hemos configurado ssh para que tenga un acceso remoto y sin contraseña, tan solo habremos de añadir la instrucción de acceso mediante ssh a crontab para poder hacer las copias de seguridad de nuestro directorio de forma automática.
+
+### Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido de ambas máquinas y del software
+
+A continuación se muestra el aspecto del fichero crontab, donde, en la última línea se especifica la realización de una copia de seguridad de los ficheros albergados en el directorio */var/www/html*, durante el primer minuto de cada hora.
+
+![Imagen][im7]
 
 
-### Configuración de ssh para acceder sin que solicite contraseña}
-### establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido de ambas máquinas y del software}
+
 
 
 
@@ -86,3 +107,4 @@ figura6: Ejecución del comando *ssh* sin contraseña
 [im4]: Imagenes/maq1.png  
 [im5]: Imagenes/maq1_2.png  
 [im6]: Imagenes/maq2.png  
+[im7]: Imagenes/crontab.png
