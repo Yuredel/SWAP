@@ -2,7 +2,9 @@
 ## Crear un tar con fichero locales en una máquina remota
 
 #### Escenario
-Disponemos dos máquinas virtualizadas que disponen de UbuntuServer16 como sistema operativo.En la práctica anterior, configuramos las interfaces de red para que cada máquina dispusiera de una ip diferent. Partiendo de esta casuística, podremos utilizar las funciones que nos proporciona la herramienta ssh para comunicar ambas máquinas.
+Disponemos dos máquinas virtualizadas que disponen de UbuntuServer16 como sistema operativo.En la práctica anterior, configuramos las interfaces de red para que cada máquina dispusiera de una ip diferent. Partiendo de esta casuística, podremos utilizar las funciones que nos proporciona la herramienta ssh para comunicar ambas máquinas.Las ip's de dichas máquinas son:
+* máquina1: 192.168.1.101
+* máquina2: 192.168.1.102
 #### Probar el funcionamiento de la copia  de archivos por ssh
 aUsaremos el comando tar para comprimir el archivo deseado, de la siguiente manera:  
 
