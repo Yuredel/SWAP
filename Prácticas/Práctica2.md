@@ -1,9 +1,9 @@
 # Práctica2: Clonar la Información de un sitio Web
-### Crear un tar con fichero locales en una máquina remota
+## Crear un tar con fichero locales en una máquina remota
 
-##### Escenario
+#### Escenario
 Disponemos dos máquinas virtualizadas que disponen de UbuntuServer16 como sistema operativo.En la práctica anterior, configuramos las interfaces de red para que cada máquina dispusiera de una ip diferent. Partiendo de esta casuística, podremos utilizar las funciones que nos proporciona la herramienta ssh para comunicar ambas máquinas.
-##### Probar el funcionamiento de la copia  de archivos por ssh
+#### Probar el funcionamiento de la copia  de archivos por ssh
 aUsaremos el comando tar para comprimir el archivo deseado, de la siguiente manera:  
 
 ` tar czf - directorio | ssh equipo\_destino 'cat > ~/tar.tgz' `
@@ -11,9 +11,9 @@ aUsaremos el comando tar para comprimir el archivo deseado, de la siguiente mane
 ![Imagen][im1]  
 figura1: Ejecución del comando ***tar*** en la máquina origen
 
-### Clonado de una carpeta entre las dos máquinas remotas
+## Clonado de una carpeta entre las dos máquinas remotas
 
-##### Instalación de la herramienta *** RSYNC***
+#### Instalación de la herramienta *** RSYNC***
 
 La instalación de la herramienta en Linux, es sencilla y puede hacerse fácilmente  desde la terminal mediante el siguiente comando:  
 
@@ -24,7 +24,7 @@ Aunque podemos optar por trabajar como root, utilizaremos el usuario sin privile
 
  `sudo chown yurena:yurena -R /var/www/html`
 
-### Comprobación del funcionamiento de la herramienta
+#### Comprobación del funcionamiento de la herramienta
 
 Probaremos el funcionamiento clonando una carpeta de la máquina origen(192.168.1.101) a la máquina destino (192.168.1.102). Ejecutaremos la siguiente instrucción en la máquina destino:
 
@@ -53,7 +53,7 @@ En la siguiente figura podemos ver la ejecución del comando.
 ![Imagen][im3]
 figura3: Ejecución del comando rsync
 
-### Acceso sin contraseña para ***ssh***
+## Acceso sin contraseña para ***ssh***
 Para automatizar esta tarea, necesitaremos que ssh nos permita el intercambio de información entre máquinas remotas, sin contraseña. Para ello, normalmente se utilizará la autenticación con un par de claves públicas-privadas.  
 Mediante ssh-keygen podremos generar la clave indicando con la opción -t el tipo de clave.   
 Tenemos, pues, que si ejecutamos  en la máquina destino el siguiente comando:
@@ -71,7 +71,7 @@ figuras 4 y 5: creación de la clave pública
 ![Imagen][im6]
 figura6: Ejecución del comando *ssh* sin contraseña
 
-### Programar tareas con  ***CRONTAB***
+## Programar tareas con  ***CRONTAB***
  En el sistema operativo Unix, ***cron*** es un administrador regular de procesos en segundo plano (demonio) que ejecuta procesos o guiones a intervalos regulares (por ejemplo, cada minuto, día, semana o mes). Los procesos que deben ejecutarse y la hora en la que deben hacerlo se especifican en el fichero crontab.  
 Los siete campos están organizados de la siguiente manera:
 * Minuto: Indica el minuto de la hora en que la instrucción será ejecutada.
@@ -89,7 +89,7 @@ representará una tarea que se realiza cada minuto de cada día de cada mes.
 
 Como hemos configurado ssh para que tenga un acceso remoto y sin contraseña, tan solo habremos de añadir la instrucción de acceso mediante ssh a crontab para poder hacer las copias de seguridad de nuestro directorio de forma automática.
 
-### Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido de ambas máquinas y del software
+#### Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido de ambas máquinas y del software
 
 A continuación se muestra el aspecto del fichero crontab, donde, en la última línea se especifica la realización de una copia de seguridad de los ficheros albergados en el directorio */var/www/html*, durante el primer minuto de cada hora.
 
