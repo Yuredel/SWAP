@@ -7,7 +7,7 @@
 * ***Cherokee***
 * ***node.js***
 
-## APACHE 1995
+## APACHE (1995)
 
 Es el más conocido de los servidores web HTTP,  creado en 1995, se trata de un servidor de código abierto, para plataformas Unix. Para  Microsoft Windows, Macintosh y otras plataformas necesitan del protocolo HTTP/1.1. Una de las principales características de Apache es que es extendible mediante módulos, los cuales posibilitan varias tareas:
 * Manejo de distintas conexiones.
@@ -30,7 +30,7 @@ Es software libre y de código abierto, licenciado bajo la Licencia BSD simplifi
 Es un servidor muy demandando en los últimos tiempos, ya que es capaz de soportar gran carga de trabajo, lo que viene siendo muy necesario debido al aumento del tráfico en internet.
 Además de haberse adaptado al volumen del tráfico actual, nginx está diseñedo para soportar miles de conexiones mediante hebras, lo que optimiza el uso de la CPU y la memoria. ES un servidor altamente eficiente y robusto, ya que no da permisos a los usuarios del sistema, pero poco configurable. No permite ni dar permiso ni carga o descarga dinámica de contenidos.
 
-## THTTPD
+## THTTPD (2003)
  Es un servidor web de código libre disponible para la mayoría de las variantes de Unix. Se caracteriza por ser simple, pequeño, portátil, rápido, y seguro, ya que utiliza los requerimientos mínimos de un servidor HTTP. Esto lo hace ideal para servir grandes volúmenes de información estática.
  * Simple, porque esto maneja solo el mínimo necesario para poner en práctica el protocolo HTTP, algunas veces un poco más que el mínimo.
 
