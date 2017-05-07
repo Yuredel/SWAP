@@ -18,7 +18,7 @@ Instalaremos nginx, un servidor web de código abierto. La instalación es senci
 sudo apt-get update && sudo apt-get dist-upgradde && sudo apt-get autoremove
 sudo apt-get install nginx
 ~~~~
-Para poder utilizar el servidor como Balanceador, deberemos acceder al fichero***/etc/nginx/conf.d/default.conf***, e introducir los siguientes cambios:
+Para poder utilizar el servidor como Balanceador, deberemos acceder al fichero ***/etc/nginx/conf.d/default.conf***, e introducir los siguientes cambios:
 ![Img][im1]
 
 Para que el servidor deje de funcionar como un servidor web deberemos comentar la siguiente línea del fichero de configuración de *nginx* ubicado en la siguiente ruta:
@@ -46,7 +46,9 @@ Vemos en la siguiente figura como se alternan las respuestas del servidor.
 ## Balanceo de Carga Ponderado
 #### Cambios en la Configuración
 En el archivo situado en, ***/etc/nginx/conf.d/default.conf***, y añadimos a los servidores sobre los que vamos ha hacerles el balanceo, un peso mediante la variable weight. Añadiremos un mayor peso a aquellas máquinas que consideremos más potentes.
+
 ![Img][im4]
+
 Esta puede ser una opción interesante en el caso de que tengamos máquinas de diversas capacidades pero esta opción tiene como inconveniente, que no permite mantener las sesiones de forma correcta.
 Por último deberemos reiniciar el servicio:
 
@@ -58,11 +60,15 @@ Podemos observar en la imagen que el balanceador envía una tarea a la máquina1
 Para conseguir dirigir  el tráfico mediante las IP necesitamos volver al archivo de configuración
 Hay dos formas de hacerlo,ambos, mediante la modificación del archivo de configuración: */etc/nginx/conf.d/default.conf*
 * mediante la directiva ***ip_hash***, introduciéndola en el apartado *upstream apaches*.
+
 ![Img][im6]
+
 Esta opción controlaría el tráfico desde el servidor, dirigiendo a todos los usarios de un servidor hacía el mismo servidor
 
 * Mediante la directiva ***keepalive***, que posibilida identificar al usuario final y dirigir el tráfico de forma más precisa.Escribiremos en el fichero de configuración: */etc/nginx/conf.d/default.conf* lo siguiente:
+
 ![Img][im7]
+
 Vemos que keepalive va seguido de un número que indica lo segundos durante los que se mantiene la conexión.
 
 
