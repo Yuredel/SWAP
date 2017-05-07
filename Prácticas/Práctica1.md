@@ -43,7 +43,7 @@ Con la máquina apagada, y en la sección de configuración de las interfaces de
 
 Al ejecutar el comando *ifconfig*, podemos observara que la interfaz que no está configurada es la que recibe el nombre enp0s8.
 
-Buscaremos el archivo de configuración de interfaces en la siguiente dirección: *** /etc/network/interfaces***.. Dentro del archivo añadiremos las siguientes líneas para la configuración de la interfaz:
+Buscaremos el archivo de configuración de interfaces en la siguiente dirección: ***/etc/network/interfaces***.. Dentro del archivo añadiremos las siguientes líneas para la configuración de la interfaz:
 ~~~
 auto enp0s8
 iface enp0s8 inet static
