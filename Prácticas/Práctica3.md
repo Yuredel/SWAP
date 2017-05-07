@@ -10,7 +10,8 @@ como sistema operativo. Las ip's de dichas máquinas son las siguientes:
 El tráfico de Internet está en constante crecimiento y por tanto ampliar la memoria del servidor solo es una solución temporal. La opción más razonable es, a largo plazo, configurar más servidores y repartir las peticiones de los clientes entre ellos. Esto incrementa la velocidad de acceso del usuario al servidor, mejora la fiabilidad del sistema y la tolerancia a fallos, permitiendo reparar o mantener cualquier servidor en línea sin que afecte al resto del servicio.
 La forma más elemental para hacer este balanceo de carga entre servidores, es utilizar un DNS. Este tipo de balanceo resulta sencillo y eficaz, solo necesitaremos varias máquinas que dispongan de diferentes ip's. El inconveniente del balanceo mediante un servidor DNS, es que este no tendrá en cuenta la carga de trabajo a la que está sometido el servidor.
 
-## Balanceo de carga  con  Round-Robin
+## Balanceo de Carga  con  Round-Robin
+
 #### Configuración
 Instalaremos nginx, un servidor web de código abierto. La instalación es sencilla mediante terminal:
 ~~~~
@@ -32,7 +33,8 @@ A continuación pondremos en marcha el servicio de la siguiente manera:
 
 `sudo systemctl start nginx`
 
-Si la configuración es correcta, al efectuar 'systemctl status nginx.service', podremos ver la siguiente respuesta:
+Si la configuración es correcta, al efectuar
+`systemctl status nginx.service`, podremos ver la siguiente respuesta:
 ![Img][im2]
 
 #### Puesta en marcha del servicio
@@ -41,8 +43,27 @@ Vemos en la siguiente figura como se alternan las respuestas del servidor.
 ![Img][im3]
 
 
+## Balanceo de Carga Ponderado
+#### Cambios en la Configuración
+En el archivo situado en, ***/etc/nginx/conf.d/default.conf***, y añadimos a los servidores sobre los que vamos ha hacerles el balanceo, un peso mediante la variable weight. Añadiremos un mayor peso a aquellas máquinas que consideremos más potentes.
+![Img][im4]
+Esta puede ser una opción interesante en el caso de que tengamos máquinas de diversas capacidades pero esta opción tiene como inconveniente, que no permite mantener las sesiones de forma correcta.
+Por último deberemos reiniciar el servicio:
 
+`sudo systemctl restart nginx`
+#### Puesta en marcha del servicio
+Podemos observar en la imagen que el balanceador envía una tarea a la máquina1, mientras que a la máquina2, le envía dos tareas, tal y como se ha indicado en la configuración.
+![Img][im5]
+## Balanceo de Carga por IP
+Para conseguir dirigir  el tráfico mediante las IP necesitamos volver al archivo de configuración
+Hay dos formas de hacerlo,ambos, mediante la modificación del archivo de configuración: */etc/nginx/conf.d/default.conf*
+* mediante la directiva ***ip_hash***, introduciéndola en el apartado *upstream apaches*.
+![Img][im6]
+Esta opción controlaría el tráfico desde el servidor, dirigiendo a todos los usarios de un servidor hacía el mismo servidor
 
+* Mediante la directiva ***keepalive***, que posibilida identificar al usuario final y dirigir el tráfico de forma más precisa.Escribiremos en el fichero de configuración: */etc/nginx/conf.d/default.conf* lo siguiente:
+![Img][im7]
+Vemos que keepalive va seguido de un número que indica lo segundos durante los que se mantiene la conexión.
 
 
 # Solucionando problemas
@@ -52,3 +73,7 @@ Vemos en la siguiente figura como se alternan las respuestas del servidor.
 [im1]:/Imagenes/P3/configuracionRoundRobin.png
 [im2]:/Imagenes/P3/status.png
 [im3]:/Imagenes/P3/round-robin.png
+[im4]: /Imagenes/P3/roundrobinWeight.png
+[im5]:/Imagenes/P3/salidaWeight.png
+[im6]:/Imagenes/P3/ip.png
+[im7]:/Imagenes/P3/keep.png
