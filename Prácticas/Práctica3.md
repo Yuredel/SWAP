@@ -76,10 +76,10 @@ Vemos que keepalive va seguido de un número que indica lo segundos durante los 
 ## Al levantar el NGINX
 ## El servidor
 
-[im1]:/Imagenes/P3/configuracionRoundRobin.png
-[im2]:/Imagenes/P3/status.png
-[im3]:/Imagenes/P3/round-robin.png
-[im4]: /Imagenes/P3/roundrobinWeight.png
-[im5]:/Imagenes/P3/salidaWeight.png
-[im6]:/Imagenes/P3/ip.png
-[im7]:/Imagenes/P3/keep.png
+[im1]:Imagenes/P3/configuracionRoundRobin.png
+[im2]:Imagenes/P3/status.png
+[im3]:Imagenes/P3/round-robin.png
+[im4]:Imagenes/P3/roundrobinWeight.png
+[im5]:Imagenes/P3/salidaWeight.png
+[im6]:Imagenes/P3/ip.png
+[im7]:Imagenes/P3/keep.png
