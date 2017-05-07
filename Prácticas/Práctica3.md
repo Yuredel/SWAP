@@ -19,6 +19,7 @@ sudo apt-get update && sudo apt-get dist-upgradde && sudo apt-get autoremove
 sudo apt-get install nginx
 ~~~~
 Para poder utilizar el servidor como Balanceador, deberemos acceder al fichero ***/etc/nginx/conf.d/default.conf***, e introducir los siguientes cambios:
+
 ![Img][im1]
 
 Para que el servidor deje de funcionar como un servidor web deberemos comentar la siguiente línea del fichero de configuración de *nginx* ubicado en la siguiente ruta:
@@ -55,21 +56,28 @@ Por último deberemos reiniciar el servicio:
 `sudo systemctl restart nginx`
 #### Puesta en marcha del servicio
 Podemos observar en la imagen que el balanceador envía una tarea a la máquina1, mientras que a la máquina2, le envía dos tareas, tal y como se ha indicado en la configuración.
+
 ![Img][im5]
+
 ## Balanceo de Carga por IP
 Para conseguir dirigir  el tráfico mediante las IP necesitamos volver al archivo de configuración
 Hay dos formas de hacerlo,ambos, mediante la modificación del archivo de configuración: */etc/nginx/conf.d/default.conf*
-* mediante la directiva ***ip_hash***, introduciéndola en el apartado *upstream apaches*.
+
+###### Ip_hash
+mediante la directiva ***ip_hash***, introduciéndola en el apartado *upstream apaches*.
 
 ![Img][im6]
 
-Esta opción controlaría el tráfico desde el servidor, dirigiendo a todos los usarios de un servidor hacía el mismo servidor
+Esta opción controlaría el tráfico desde el servidor, dirigiendo a todos los usarios de un servidor hacía el mismo servidor.
 
-* Mediante la directiva ***keepalive***, que posibilida identificar al usuario final y dirigir el tráfico de forma más precisa.Escribiremos en el fichero de configuración: */etc/nginx/conf.d/default.conf* lo siguiente:
+###### Keepalive
+Mediante la directiva ***keepalive***, que posibilida identificar al usuario final y dirigir el tráfico de forma más precisa.Escribiremos en el fichero de configuración: */etc/nginx/conf.d/default.conf* lo siguiente:
 
 ![Img][im7]
 
 Vemos que keepalive va seguido de un número que indica lo segundos durante los que se mantiene la conexión.
+
+
 
 
 # Solucionando problemas
