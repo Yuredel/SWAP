@@ -104,8 +104,12 @@ En la siguiente imagen podemos ver como la máquina 3, actúa como balanceadora 
 
 ## Sobrecarga de los Servidores
 A continuación simularemos la sobrecarga del servidor tanto para nginx, como para haproxy. Así podremos observar su respuesta y poder hacer una comparativa entre ambos servidores.
+
+
 ### Comando ab
-que es , hay que tener apache parametros
+
+  ApacheBench es una herramienta de Apache que pueden medir el rendimiento de su servidor, o de cualquier otro (aunque no use Apache). Y una de sus principales ventajas es su extrema sencillez, ya que no hay más que ejecutar el comando ab con un par de parámetros para obtener información muy útil.
+  Los parámetros de esta herramienta nos permite señalar el número de llamadas (-n) y el número de hilos que lanzamos(-c)
 #### Comando ab sobre el servidor NGINX
 A continuación lanzamos el comando sobre el balanceador Nginx.
 ![Img][im12]
@@ -119,7 +123,7 @@ Cuando lanzamos el mismo comando contra el servidor HAproxy obtenemos los siguie
 ![Img][im11]
 
 ## Comparativa entre las dos máquinas
-
+Podemos ver que según los datos mostrados por el Benchmark de apache, el servidor de HaPoxy es más eficiente que el servidor nginx para la configuración actual de nuestras máquinas en un supuesto de sobrecarga en el servidor
 
 [im1]:Imagenes/P3/configuracionRoundRobin.png
 [im2]:Imagenes/P3/status.png
