@@ -10,18 +10,19 @@ La seguridad en la nube es un tema muy controvertido en el sector TI. En esta me
 
 #### ¿Qué es la nube?
 
-“La nube” es un término que apareció alrededor del año 2006 \cite{wiki1} \cite{comienzos} y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido [^1]
+“La nube” es un término que apareció alrededor del año 2006  y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido  , pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como IBM[¹]  o DEC[²] . Pero, ¿Qué es exactamente “la nube”?
 
 
 
-[^1]:extras/wiki.md
-
-
-  pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como * [IBM]: ibnej   o DEC  . Pero, ¿Qué es exactamente “la nube”?
 
 
 
-> ‘Cloud computing’ es un modelo que permite el acceso ubicuo, conveniente y bajo demanda a un conjunto compartido de recursos informáticos configurables (por ejemplo: redes, servidores, almacenamiento, aplicaciones y servicios) que pueden ser rápidamente provisionados y liberados con un mínimo esfuerzo de gestión o de interacción con el proveedor de servicios.
+  pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existía en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informáticas como IBM o DEC  . Pero, ¿Qué es exactamente “la nube”?
+
+
+
+> ‘Cloud computing’ es un modelo que permite el acceso ubicuo, conveniente y bajo demanda a un conjunto compartido de recursos informáticos configurables (por ejemplo: redes, servidores, almacenamiento, aplicaciones y servicios) que pueden ser rápidamente provistos y liberados con un mínimo esfuerzo de gestión o de interacción con el proveedor de servicios.
+
 > Definición oficial del cloud computing de NIST (National Institute of Standards and technology)
 
 #### Tipos de nube y sus caraterísticas
@@ -30,7 +31,7 @@ Según la definición oficial de NIST del cloud computing \cite{nist}, este mode
 
 ###### Características esenciales}
 
-Las características esenciales del cloud computing son \cite{nist} \cite{blogtechnet}:
+Las características esenciales del cloud computing son[³] [⁴]:
 
 ***Autoservicio por demanda:***  el consumidor puede auto-aprovisionar capacidades de cómputo según necesidades sin requerir interacción humana por parte del proveedor de servicios.
 
@@ -38,40 +39,47 @@ Las características esenciales del cloud computing son \cite{nist} \cite{blogte
 
 ***Conjunto de recursos:*** los recursos computacionales del proveedor se habilitan para servir a múltiples consumidores mediante un modelo multi-propietario. El consumidor no tiene control o conocimiento sobre la ubicación concreta de los recursos, pero puede saber/indicar la ubicación a alto nivel de abstracción (por ejemplo: país, región o centro de datos).
 
-***Elasticidad:*** los recursos pueden ser rápidamente y elásticamente provisionados y escalados automáticamente según las necesidades del consumidor.
+***Elasticidad:*** los recursos pueden ser rápidamente y elásticamente provistos y escalados automáticamente según las necesidades del consumidor.
 
 ***Servicio medido:*** los sistemas en la nube son capaces de controlar y monitorizar los recursos usados por el consumidor, proporcionando transparencia sobre el uso de recursos tanto para el proveedor como para el consumidor.
 
 
 #### Modelos de servicio
 
-Los principales modelos de servicio del cloud computing son \cite{nist} \cite{blogtechnet}:
+Los principales modelos de servicio del cloud computing son [³] [⁴]:
 
 
 
-***Software as a Service (SaaS):*** el modelo consiste en proporcionar al consumidor aplicaciones que se ejecutan en la infraestructura cloud del proveedor, a las que el consumidor puede acceder desde cualquier dispositivo mediante una interfaz web o software. El consumidor no se preocupa por la infraestructura cloud que sostiene dichas aplicaciones como red, servidores, sistemas operativos o almacenamiento.  Algunos ejemplos de este modelo de servicios pueden ser Office Online \cite{officeonline}  , ofrecido por Microsoft, o  Google Docs \cite{googledocs} , ofrecido por Google.
+***Software as a Service (SaaS):*** el modelo consiste en proporcionar al consumidor aplicaciones que se ejecutan en la infraestructura cloud del proveedor, a las que el consumidor puede acceder desde cualquier dispositivo mediante una interfaz web o software. El consumidor no se preocupa por la infraestructura cloud que sostiene dichas aplicaciones como red, servidores, sistemas operativos o almacenamiento.  Algunos ejemplos de este modelo de servicios pueden ser Office Online [⁵]  , ofrecido por Microsoft, o  Google Docs [⁶] , ofrecido por Google.
 
-***Platform as a Service (PaaS):*** el modelo consiste en proporcionar al consumidor la habilidad de desplegar en una infraestructura cloud aplicaciones creadas usando distintos lenguajes de programación, librerías, servicios o herramientas soportadas por el proveedor. De nuevo, el consumidor no tiene control sobre la infraestructura cloud del proveedor, pero puede gestionar los despliegues y la configuración del entorno de despliegue en el cual se van a ejecutar sus aplicaciones. Heroku \cite{heroku} y \cite{bluemix} son ejemplos de plataformas como servicio.
+***Platform as a Service (PaaS):*** el modelo consiste en proporcionar al consumidor la habilidad de desplegar en una infraestructura cloud aplicaciones creadas usando distintos lenguajes de programación, librerías, servicios o herramientas soportadas por el proveedor. De nuevo, el consumidor no tiene control sobre la infraestructura cloud del proveedor, pero puede gestionar los despliegues y la configuración del entorno de despliegue en el cual se van a ejecutar sus aplicaciones. Heroku [⁷] y [⁸]son ejemplos de plataformas como servicio.
 
-***Infrastructure as a Service (IaaS):*** el modelo consiste en proporcionar al consumidor recursos de procesamiento, almacenamiento, redes o otros recursos computacionales fundamentales en los cuales el consumidor pueda desplegar y ejecutar software arbitrario, el cual puede incluir sistemas operativos u otro tipo de aplicaciones. El consumidor no tiene control sobre la infraestructura cloud del proveedor, pero tiene control sobre los sistemas operativos y los recursos donde estos se ejecutan. Microsoft Azure \cite{azure} es un ejemplo de este modelo de servicio.\\
+***Infrastructure as a Service (IaaS):*** el modelo consiste en proporcionar al consumidor recursos de procesamiento, almacenamiento, redes o otros recursos computacionales fundamentales en los cuales el consumidor pueda desplegar y ejecutar software arbitrario, el cual puede incluir sistemas operativos u otro tipo de aplicaciones. El consumidor no tiene control sobre la infraestructura cloud del proveedor, pero tiene control sobre los sistemas operativos y los recursos donde estos se ejecutan. Microsoft Azure [⁹] es un ejemplo de este modelo de servicio.
 
-Entre los proveedores de servicios en la nube más conocidos hoy en día se encuentran Amazon (Amazon Web Services) \cite{amazonwebservices}, Microsoft (Microsoft Azure)\cite{azure}, Google (Google Cloud Platform) \cite{googlecloud} e IBM (IBM Cloud) \cite{ibmcloud}, que ofrecen los tres modelos de servicio previamente mencionados, tal y como se puede observar en la siguiente figura.
+Entre los proveedores de servicios en la nube más conocidos hoy en día se encuentran Amazon (Amazon Web Services) [¹0], Microsoft (Microsoft Azure)[⁹], Google (Google Cloud Platform) [¹1] e IBM (IBM Cloud) [¹2], que ofrecen los tres modelos de servicio previamente mencionados, tal y como se puede observar en la siguiente figura.
+
 ![Img][im1]
-[im1]: img/cloud.jpg
+
 
 
 ###### Modelos de despliegue
 
-Los modelos de despliegue del cloud computing son \cite{nist} \cite{blogtechnet}: el modelo de nube privada, nube comunitaria, nube pública y nube híbrida. Los dos modelos más comunes son la nube privada y la nube pública. La nube pública vende servicios en Internet a cualquier tipo de consumidor. Las nubes privadas son redes o centros de datos que pertenecen a una organización y que ofrece servicios a un número limitado de personas. Sea privada o pública, el objetivo de la computación en la nube es ofrecer acceso a recursos de computación y servicios de TI de forma sencilla y escalable.
+Los modelos de despliegue del cloud computing son:
+* El modelo de nube privada.
+* El modelo nube comunitaria.
+* El modelo nube pública.
+* El modelo nube híbrida.
+
+Los dos modelos más comunes son la nube privada y la nube pública. La nube pública vende servicios en Internet a cualquier tipo de consumidor. Las nubes privadas son redes o centros de datos que pertenecen a una organización y que ofrece servicios a un número limitado de personas. Sea privada o pública, el objetivo de la computación en la nube es ofrecer acceso a recursos de computación y servicios de TI de forma sencilla y escalable.
 
 
 ### Implicaciones de la Seguridad en la nube
 
-Los beneficios de la computación en la nube son claros: elasticidad, escalabilidad y pago por uso, pero muchos debaten si la nube es un entorno lo suficientemente seguro para los datos sensibles. La seguridad de los datos en la nube es un tema muy controvertido en el sector TI, donde algunos creen que la nube es más segura que los ambientes internos de una organización, mientras que otros creen lo contrario. Debido a la complejidad del cloud computing, el debate sobre la seguridad en la nube no es tan sencillo, pero una cosa es cierta: no importa si se trata de una nube pública, privada o híbrida, la seguridad es esencial, y los CSPs\footnote{CSP - Cloud Service Provider (proveedor de servicios cloud)} deben asegurar sus infraestructuras \cite{implicaciones seguridad}.
+Los beneficios de la computación en la nube son claros: elasticidad, escalabilidad y pago por uso, pero muchos debaten si la nube es un entorno lo suficientemente seguro para los datos sensibles. La seguridad de los datos en la nube es un tema muy controvertido en el sector TI, donde algunos creen que la nube es más segura que los ambientes internos de una organización, mientras que otros creen lo contrario. Debido a la complejidad del cloud computing, el debate sobre la seguridad en la nube no es tan sencillo, pero una cosa es cierta: no importa si se trata de una nube pública, privada o híbrida, la seguridad es esencial, y los CSPs[^A] deben asegurar sus infraestructuras [¹3].
 
 #### Amenazas en la nube
 
-Al trasladarse a la nube, tanto los proveedores de servicios en la nube como las empresas que usan dichos servicios tienen que hacer frente a las amenazas de la computación en la nube, para disminuir los riesgos que suponen el uso de estos servicios. Según varios artículos en la web \cite{amenazas1}\cite{amenazas2}\cite{amenazas3}, algunas de las amenazas de seguridad en la computación en la nube son las siguientes:
+Al trasladarse a la nube, tanto los proveedores de servicios en la nube como las empresas que usan dichos servicios tienen que hacer frente a las amenazas de la computación en la nube, para disminuir los riesgos que suponen el uso de estos servicios. Según varios artículos en la web , algunas de las amenazas de seguridad en la computación en la nube son las siguientes[^14][^15][^16]:
 
 
 ***Facilidad de uso.*** Los usuarios finales requieren facilidad de uso, pero los servicios también pueden ser utilizados fácilmente por atacantes para fines maliciosos.
@@ -99,7 +107,7 @@ Al trasladarse a la nube, tanto los proveedores de servicios en la nube como las
 
 #### Buenas prácticas para evitar las amenazas en la nube.
 
-Como podemos ver en el apartado anterior existen dos actores principales que actúan para conseguir una buena seguridad en la nube: los proveedores y los consumidores. A continuación vamos a describir lo que deberían hacer o asegurar cada uno de ellos \cite{buenaspracticas}.
+Como podemos ver en el apartado anterior existen dos actores principales que actúan para conseguir una buena seguridad en la nube: los proveedores y los consumidores. A continuación vamos a describir lo que deberían hacer o asegurar cada uno de ellos [^17].
 
 ###### Proveedores
 
@@ -128,7 +136,7 @@ Buenas prácticas que deberían tener en cuenta los consumidores de servicios en
 
 ***Contraseñas.***	Muchas empresas invierten grandes cantidades de dinero y tiempo en buenos cortafuegos y chequeos de seguridad, pero aún y así puede que hayan brechas, por el simple hecho de tener contraseñas inseguras. Los usuarios deben seguir unos criterios estrictos a la hora de crear contraseñas como la complejidad, una fecha de expiración, usar contraseñas diferentes para cada servicio o no repetir contraseñas usadas anteriormente .
 
-***Seguridad de la máquina virtual.*** Para una buena seguridad de la máquina virtual, ‘the Center for Internet Security’ \cite{centerinternetsecurity} recomienda algunas buenas prácticas (best practices) a seguir:
+***Seguridad de la máquina virtual.*** Para una buena seguridad de la máquina virtual, ‘the Center for Internet Security’ [^18] recomienda algunas buenas prácticas (best practices) a seguir:
 
 
 
@@ -141,7 +149,7 @@ Buenas prácticas que deberían tener en cuenta los consumidores de servicios en
 		* El uso de copias de seguridad.
 		* El uso de registro de auditoría.
 		* El uso de hosts basados en detección/prevención de intrusiones  (IDS / IPS).
-		* El uso de técnicas de cifrado de datos (File / DB\footnote{BD - Base de Datos}).
+		* El uso de técnicas de cifrado de datos (File / DB  Base de Datos).
 
 
 
@@ -149,7 +157,7 @@ Buenas prácticas que deberían tener en cuenta los consumidores de servicios en
 
 ### Caso particular
 
-Después de haber visto la descripción del cloud computing, su funcionamiento y los diferentes servicios que ofrece, y haber identificado varias amenazas y las soluciones a ellas, tanto en los proveedores como en los clientes, nos centrarnos en el estudio de un caso particular para ver cómo se aplica todo lo presentado anteriormente en la vida real. Hemos elegido *Dropbox* \cite{dropbox}, ya que es una aplicación cotidiana para muchos de los usuarios del internet. \\
+Después de haber visto la descripción del cloud computing, su funcionamiento y los diferentes servicios que ofrece, y haber identificado varias amenazas y las soluciones a ellas, tanto en los proveedores como en los clientes, nos centrarnos en el estudio de un caso particular para ver cómo se aplica todo lo presentado anteriormente en la vida real. Hemos elegido *Dropbox* [¹9], ya que es una aplicación cotidiana para muchos de los usuarios del internet.
 
 Dropbox es un servicio de alojamiento de archivos multiplataforma en la nube, operado por la compañía *Dropbox, Inc.*. El servicio permite a los usuarios almacenar y sincronizar archivos en línea y entre distintos dispositivos y compartir archivos y carpetas con otros usuarios.
 Dropbox como SaaS (Software-as-a-Service) ofrece 3 tipos de cuentas la primera es gratuita, “Free”, la segunda es la “Pro” y la tercera es la “Business”, y se diferencian en la cantidad de almacenamiento ofrecido, herramientas para la administración en equipo y por el coste de los servicios. De todas las versiones, nos vamos a enfocar en un producto en concreto, *Dropbox Business* \cite{dropboxbusiness}, ya que requiere más seguridad que las otras versiones de Dropbox.
@@ -162,8 +170,9 @@ A continuacion se presenta la arquitectura de la infraestructura de Dropbox y la
 
 Dropbox ha sido diseñado con varias capas de protección que se adaptan a las diferentes interfaces como el escritorio, el sitio web, móviles y aplicaciones de terceros vinculadas a Dropbox. Todos estos clientes se conectan a servidores seguros que proporcionan acceso a los archivos, de manera que estos se puedan modificar o compartir de forma segura. La figura \ref{fig:arquitectura} muestra la arquitectura de la infraestructura de Dropbox.
 
+
 ![Img][im2]
-[im2]:img/arquitectura.png
+
 
 
 A continuación vamos a ver los diferentes servicios de esta arquitectura y cómo lo hacen seguro.
@@ -244,10 +253,9 @@ Las acciones del administrador son muy variadas y algunos de los objetivos que t
 
 ***Visibilidad - Registros de actividades completos***
 
-\paragraph{}
 Los administradores de Dropbox Business pueden generar informes de actividades en cualquier momento para tener un control y poder auditar todas las actividades que los usuarios realizan. Los informes de actividad proporcionan, entre otros puntos, datos sobre cambios en la configuración de contraseñas o verificación en dos pasos (aunque no pueden ver las contraseñas de los usuarios), y sobre los inicios de sesión (tanto correctos como intentos fallidos), sobre la vinculación de aplicaciones de terceros a las cuentas Dropbox, sobre el uso compartido de las carpetas, ficheros y enlaces a estos. Además, cada usuario puede ver las actividades realizadas sobre sus archivos y carpetas desde la página de eventos del usuario.
 
-\subsubsection{Seguridad de la información}
+###### Seguridad de la información
 
 Dropbox consigue mantener la confianza de sus usuarios mediante la evaluación de los riesgos y la mejora continua de la seguridad, confidencialidad, integridad y disponibilidad de los servicios que ofrecen. Entre otros, los puntos más importantes para mantener la seguridad al día son las políticas de seguridad, el control de acceso, la seguridad de la red y la administración de cambios \cite{sec_seg_inf}.
 
@@ -264,16 +272,18 @@ La seguridad de la red es uno de los puntos más importantes, por lo que Dropbox
 
 Dropbox emplea técnicas de protección como cortafuegos, supervisión de la red y sistemas de detección de intrusiones, garantizando la seguridad del entorno de producción y que sólo el tráfico permitido pueda llegar a la infraestructura interna.
 
-***Administración de cambios.}
+***Administración de cambios.***
 
 Todos los cambios de la infraestructura o aplicaciones están previamente autorizados mediante una política de administración de cambios antes su implementación en las aplicaciones. Todos los cambios están gestionados y guardados mediante un sistema de control de versiones y deben someterse a procedimientos de pruebas de control de calidad para verificar que cumplen los requisitos de seguridad. Todos los cambios de código están revisados manualmente pasan un control de calidad.
 
 
-\section{Conclusiones}
+### Conclusiones
 
 Ya sabemos qué es la nube y cuáles son, en general, las ventajas y los riesgos de usar los servicios que ofrece. Todos los métodos que hemos visto para implementar la seguridad deberían hacer la nube un entorno lo suficientemente seguro para sobrepasar cualquier tipo de incidente, aunque el error humano puede provocar brechas en la seguridad. Remarcamos que la seguridad en la nube debería ser una relación entre los proveedores y los consumidores, donde cada uno tiene la responsabilidad de asegurar su entorno. Teniendo esto en cuenta, los servicios ofrecidos por la nube deberían ser mucho más flexibles y seguros que los métodos tradicionales. Pero como cada proveedor es diferente, tenemos que evaluar los áreas de seguridad que ofrecen antes de migrar a la nube.
 
 
 
-\section{Referencias}
+[^1]:anexos/Citas&Referencias.md
+[im1]: img/cloud.jpg
+[im2]:img/arquitectura.png
 \bibliography{bibliografia}
