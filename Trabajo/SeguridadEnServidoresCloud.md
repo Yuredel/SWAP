@@ -1,4 +1,5 @@
 # Seguiradad en la Nube
+
 ###### Viera Jasovská, Mohamed Molato & Yurena del Peso
 
 ## Resumen
@@ -314,4 +315,3 @@ Ya sabemos qué es la nube y cuáles son, en general, las ventajas y los riesgos
 
 [im1]: img/cloud.jpg
 [im2]:img/arquitectura.png
-\bibliography{bibliografia}
