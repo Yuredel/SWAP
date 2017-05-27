@@ -66,7 +66,8 @@ A continuación podemos ver como se hace una copia de la Base de Datos.
     ` mysql -u root –p`
 
 * Bloqueamos la Base de Datos:
-![Img][im2]
+
+  ![Img][im2]
 
 * Salimos d MySQL, y ejecutamos por terminal el comando de copia:
 ![Img][im3]
