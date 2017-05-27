@@ -10,14 +10,14 @@ La seguridad en la nube es un tema muy controvertido en el sector TI. En esta me
 
 #### ¿Qué es la nube?
 
-“La nube” es un término que apareció alrededor del año 2006 \cite{wiki1} \cite{comienzos} y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido [^ nota1]
+“La nube” es un término que apareció alrededor del año 2006 \cite{wiki1} \cite{comienzos} y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido [^1]
 
 
 
-[^nota1]:gygyggy
+[^1]:wiki
 
 
-  pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 \cite{wiki3}, conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como IBM \cite{ibmtimesharing}  o DEC  \cite{dectimesharing}. Pero, ¿Qué es exactamente “la nube”?
+  pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como * [IBM]: ibnej   o DEC  . Pero, ¿Qué es exactamente “la nube”?
 
 
 
