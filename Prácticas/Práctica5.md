@@ -74,6 +74,7 @@ A continuación podemos ver como se hace una copia de la Base de Datos.
 Vemos como se ha creado la copia.
 
 * Volvemos MySQL y desbloqueamos la Base de Datos:
+
 ![Img][im4]
 
 ### Importar la copia desde la máquina 1.
