@@ -132,6 +132,7 @@ iptables -A OUTPUT -i eth0 -p tcp -m multiport --dsport 22,80,443 -m state --sta
 
 Podremos comprobar el funcionamiento de las configuración añadidad ejecutando el comando ***nestat -tulpn***
 Podemos comprobar el estado de un puerto en concreto aplicando un filtro *grep* al comando:
+
 `netstat -tulpn | grep :*número_de_puerto*`
 
 
