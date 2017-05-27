@@ -51,13 +51,13 @@ Título: DEC. [Online]
 [wiki6]
 Autor: Wikipedia
 Título: Computación en tiempo compartido. [Online]
-  https://es.wikipedia.org/wiki/Tiempo_compartido_(inform%C3%A1tica)
+  https://es.wikipedia.org/wiki/Tiempo_compartido_(inform%C3%A1tica) 
 }
 
 [dectimesharing]
 Autor: DEC
 Título: DEC computación en tiempo compartido. [Online]
-  http://bitsavers.trailing-edge.com/pdf/ibm/360/tss
+  http://bitsavers.trailing-edge.com/pdf/ibm/360/tss/ 
 }
 
 [nist]
@@ -159,7 +159,7 @@ Título: Center for Internet Security. [Online]
 [dropbox]
 Autor: Dropbox
 Título: Dropbox. [Online]
-   https://es.wikipedia.org/wiki/Dropbox
+   https://es.wikipedia.org/wiki/Dropbox 
 }
 
 [dropboxbusiness]
@@ -189,5 +189,11 @@ Título: SSO . [Online]
 [sec_seg_inf]
 Autor: Dropbox
 Título: Seguridad de la información. [Online]
-  https://www.dropbox.com/business/trust/security/information-security
+  https://www.dropbox.com/business/trust/security/information-security 
+}
+
+[ref]
+Autor
+Título: algo. [Online]
+  www
 }
