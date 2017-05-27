@@ -151,11 +151,19 @@ systemd es un conjunto de demonios o daemons de administración de sistema, bibl
 Lo primero localizar la ubicación de los script. Estos se hayan albergados en:
 `/etc/systemd/system`
 Lo primero que deberemos hacer es ubicar en esta ruta un script cuyo nombre sea del tipo "miScript.service". Este fichero debe tener los siguientes permisos de ejecución ***-rwxr-xr-x***
-El fichero debe tener este aspecto
-***foto***
+El fichero debe tener este aspecto:
 
+![Img][im9]
 
+Vemos que en la sección ExectStart tenemos la ruta al script que habilitará los cortfauegos.
 
+Una vez finalizada la configuración habrá que refrescar *systemd* para que ejecute la nueva configuración. Reiniciaremos los servicios con:
+`systemctl daemon-reload`
+A continuación reiniciamos el servicio con:
+`systemctl start miScript.service`
+
+Podremos verificar la activación del servicio mediante:
+`systemctl status miScript.service`
 
 
 
@@ -169,3 +177,4 @@ El fichero debe tener este aspecto
 [im6]:Imagenes/P4/tcpGENERAL.png
 [im7]:Imagenes/P4/tcpDETALLE.png
 [im8]:Imagenes/P4/tcpudp53Salida.png
+[im9]:Imagenes/P4/cortafuegosservice.png
