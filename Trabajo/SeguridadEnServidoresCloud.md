@@ -10,7 +10,7 @@ La seguridad en la nube es un tema muy controvertido en el sector TI. En esta me
 
 #### ¿Qué es la nube?
 
-“La nube” es un término que apareció alrededor del año 2006  y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido  , pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como IBM[¹]  o DEC[²] . Pero, ¿Qué es exactamente “la nube”?
+“La nube” es un término que apareció alrededor del año 2006  y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido  , pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como IBM[^1]  o DEC[^2] . Pero, ¿Qué es exactamente “la nube”?
 
 
 
@@ -31,7 +31,7 @@ Según la definición oficial de NIST del cloud computing \cite{nist}, este mode
 
 ###### Características esenciales}
 
-Las características esenciales del cloud computing son[³] [⁴]:
+Las características esenciales del cloud computing son[^3] [^4]:
 
 ***Autoservicio por demanda:***  el consumidor puede auto-aprovisionar capacidades de cómputo según necesidades sin requerir interacción humana por parte del proveedor de servicios.
 
@@ -46,17 +46,17 @@ Las características esenciales del cloud computing son[³] [⁴]:
 
 #### Modelos de servicio
 
-Los principales modelos de servicio del cloud computing son [³] [⁴]:
+Los principales modelos de servicio del cloud computing son [^3] [^4]:
 
 
 
-***Software as a Service (SaaS):*** el modelo consiste en proporcionar al consumidor aplicaciones que se ejecutan en la infraestructura cloud del proveedor, a las que el consumidor puede acceder desde cualquier dispositivo mediante una interfaz web o software. El consumidor no se preocupa por la infraestructura cloud que sostiene dichas aplicaciones como red, servidores, sistemas operativos o almacenamiento.  Algunos ejemplos de este modelo de servicios pueden ser Office Online [⁵]  , ofrecido por Microsoft, o  Google Docs [⁶] , ofrecido por Google.
+***Software as a Service (SaaS):*** el modelo consiste en proporcionar al consumidor aplicaciones que se ejecutan en la infraestructura cloud del proveedor, a las que el consumidor puede acceder desde cualquier dispositivo mediante una interfaz web o software. El consumidor no se preocupa por la infraestructura cloud que sostiene dichas aplicaciones como red, servidores, sistemas operativos o almacenamiento.  Algunos ejemplos de este modelo de servicios pueden ser Office Online [^5]  , ofrecido por Microsoft, o  Google Docs [^6] , ofrecido por Google.
 
-***Platform as a Service (PaaS):*** el modelo consiste en proporcionar al consumidor la habilidad de desplegar en una infraestructura cloud aplicaciones creadas usando distintos lenguajes de programación, librerías, servicios o herramientas soportadas por el proveedor. De nuevo, el consumidor no tiene control sobre la infraestructura cloud del proveedor, pero puede gestionar los despliegues y la configuración del entorno de despliegue en el cual se van a ejecutar sus aplicaciones. Heroku [⁷] y [⁸]son ejemplos de plataformas como servicio.
+***Platform as a Service (PaaS):*** el modelo consiste en proporcionar al consumidor la habilidad de desplegar en una infraestructura cloud aplicaciones creadas usando distintos lenguajes de programación, librerías, servicios o herramientas soportadas por el proveedor. De nuevo, el consumidor no tiene control sobre la infraestructura cloud del proveedor, pero puede gestionar los despliegues y la configuración del entorno de despliegue en el cual se van a ejecutar sus aplicaciones. Heroku [^7] y [^8]son ejemplos de plataformas como servicio.
 
-***Infrastructure as a Service (IaaS):*** el modelo consiste en proporcionar al consumidor recursos de procesamiento, almacenamiento, redes o otros recursos computacionales fundamentales en los cuales el consumidor pueda desplegar y ejecutar software arbitrario, el cual puede incluir sistemas operativos u otro tipo de aplicaciones. El consumidor no tiene control sobre la infraestructura cloud del proveedor, pero tiene control sobre los sistemas operativos y los recursos donde estos se ejecutan. Microsoft Azure [⁹] es un ejemplo de este modelo de servicio.
+***Infrastructure as a Service (IaaS):*** el modelo consiste en proporcionar al consumidor recursos de procesamiento, almacenamiento, redes o otros recursos computacionales fundamentales en los cuales el consumidor pueda desplegar y ejecutar software arbitrario, el cual puede incluir sistemas operativos u otro tipo de aplicaciones. El consumidor no tiene control sobre la infraestructura cloud del proveedor, pero tiene control sobre los sistemas operativos y los recursos donde estos se ejecutan. Microsoft Azure [^9] es un ejemplo de este modelo de servicio.\\
 
-Entre los proveedores de servicios en la nube más conocidos hoy en día se encuentran Amazon (Amazon Web Services) [¹0], Microsoft (Microsoft Azure)[⁹], Google (Google Cloud Platform) [¹1] e IBM (IBM Cloud) [¹2], que ofrecen los tres modelos de servicio previamente mencionados, tal y como se puede observar en la siguiente figura.
+Entre los proveedores de servicios en la nube más conocidos hoy en día se encuentran Amazon (Amazon Web Services) [^10], Microsoft (Microsoft Azure)[^9], Google (Google Cloud Platform) [^11] e IBM (IBM Cloud) [^12], que ofrecen los tres modelos de servicio previamente mencionados, tal y como se puede observar en la siguiente figura.
 
 ![Img][im1]
 
@@ -75,7 +75,7 @@ Los dos modelos más comunes son la nube privada y la nube pública. La nube pú
 
 ### Implicaciones de la Seguridad en la nube
 
-Los beneficios de la computación en la nube son claros: elasticidad, escalabilidad y pago por uso, pero muchos debaten si la nube es un entorno lo suficientemente seguro para los datos sensibles. La seguridad de los datos en la nube es un tema muy controvertido en el sector TI, donde algunos creen que la nube es más segura que los ambientes internos de una organización, mientras que otros creen lo contrario. Debido a la complejidad del cloud computing, el debate sobre la seguridad en la nube no es tan sencillo, pero una cosa es cierta: no importa si se trata de una nube pública, privada o híbrida, la seguridad es esencial, y los CSPs[^A] deben asegurar sus infraestructuras [¹3].
+Los beneficios de la computación en la nube son claros: elasticidad, escalabilidad y pago por uso, pero muchos debaten si la nube es un entorno lo suficientemente seguro para los datos sensibles. La seguridad de los datos en la nube es un tema muy controvertido en el sector TI, donde algunos creen que la nube es más segura que los ambientes internos de una organización, mientras que otros creen lo contrario. Debido a la complejidad del cloud computing, el debate sobre la seguridad en la nube no es tan sencillo, pero una cosa es cierta: no importa si se trata de una nube pública, privada o híbrida, la seguridad es esencial, y los CSPs(Cloud Service Provider, proveedor de servicios cloud), deben asegurar sus infraestructuras [^13].
 
 #### Amenazas en la nube
 
@@ -96,9 +96,9 @@ Al trasladarse a la nube, tanto los proveedores de servicios en la nube como las
 
 ***Brecha de datos.*** Los proveedores que proporcionan máquinas virtuales suelen gestionar muchas VMs sobre el mismo anfitrión  físico, lo que podría dar lugar a una violación de datos. Esto podría provocar que una empresa tenga acceso a datos de otra ya que se encuentran en el mismo servidor físico. Este tipo de amenazas se llaman “ataques de canal lateral” en los cuales los datos se roban de componentes compartidos como por ejemplo la caché del procesador.
 
-***Secuestro de cuenta/servicio.*** Hoy en dia la protección proporcionada por las contraseñas, por compleja que sea, no es suficiente para garantizar la autentificación de un usuario, ya que un atacante que conozca la contraseña tendrá acceso a los servicios. Por tanto hay que proporcionar otras formas de autenticaciones más elaboradas como, por ejemplo, una confirmación por SMS, doble factor de autenticación u otra técnica que asegura que el usuario no es un atacante.
+***Secuestro de cuenta/servicio.*** Hoy en día la protección proporcionada por las contraseñas, por compleja que sea, no es suficiente para garantizar la autentificación de un usuario, ya que un atacante que conozca la contraseña tendrá acceso a los servicios. Por tanto hay que proporcionar otras formas de autenticaciones más elaboradas como, por ejemplo, una confirmación por SMS, doble factor de autenticación u otra técnica que asegura que el usuario no es un atacante.
 
-***Perfil de riesgo desconocido.*** Los consumidores deben establecer perfiles de riesgo precisos de sus sistemas e infraestructuras, tienen que estar pendientes de las actualizaciones de seguridad y aplicarlas regularmente. Deben tener sistemas IDS \footnote{ IDS - Intrusion Detection System (sistema de detección de intrusiones)} que detecta los accesos no autorizados, y buscar en los datos externos anomalías que pueden indicar la presencia de ataques y falsas alarmas. También deberían tener un SIEM \footnote{ SIEM - Security Information and Event Management (información de seguridad y administración de eventos)} que reúne los datos de los eventos, de las amenazas y los riesgos para proporcionar la información de seguridad más amplia.
+***Perfil de riesgo desconocido.*** Los consumidores deben establecer perfiles de riesgo precisos de sus sistemas e infraestructuras, tienen que estar pendientes de las actualizaciones de seguridad y aplicarlas regularmente. Deben tener sistemas IDS (Intrusion Detection System, sistema de detección de intrusiones) que detecta los accesos no autorizados, y buscar en los datos externos anomalías que pueden indicar la presencia de ataques y falsas alarmas. También deberían tener un SIEM ( Security Information and Event Management, información de seguridad y administración de eventos) que reúne los datos de los eventos, de las amenazas y los riesgos para proporcionar la información de seguridad más amplia.
 
 ***Denegación de servicio (DoS - Denial Of Service).*** Este tipo de ataque usa los recursos de las computadoras como CPU, RAM o los de la red, como el ancho de banda, para sobrecargar el servidor, saturando los canales de comunicación con flujo de información. Eso hace que el servidor no pueda seguir prestando servicios y como consecuencia causa que los servicios o recursos sean inaccesibles.
 
@@ -160,15 +160,15 @@ Buenas prácticas que deberían tener en cuenta los consumidores de servicios en
 Después de haber visto la descripción del cloud computing, su funcionamiento y los diferentes servicios que ofrece, y haber identificado varias amenazas y las soluciones a ellas, tanto en los proveedores como en los clientes, nos centrarnos en el estudio de un caso particular para ver cómo se aplica todo lo presentado anteriormente en la vida real. Hemos elegido *Dropbox* [¹9], ya que es una aplicación cotidiana para muchos de los usuarios del internet.
 
 Dropbox es un servicio de alojamiento de archivos multiplataforma en la nube, operado por la compañía *Dropbox, Inc.*. El servicio permite a los usuarios almacenar y sincronizar archivos en línea y entre distintos dispositivos y compartir archivos y carpetas con otros usuarios.
-Dropbox como SaaS (Software-as-a-Service) ofrece 3 tipos de cuentas la primera es gratuita, “Free”, la segunda es la “Pro” y la tercera es la “Business”, y se diferencian en la cantidad de almacenamiento ofrecido, herramientas para la administración en equipo y por el coste de los servicios. De todas las versiones, nos vamos a enfocar en un producto en concreto, *Dropbox Business* \cite{dropboxbusiness}, ya que requiere más seguridad que las otras versiones de Dropbox.
+Dropbox como SaaS (Software-as-a-Service) ofrece 3 tipos de cuentas la primera es gratuita, “Free”, la segunda es la “Pro” y la tercera es la “Business”, y se diferencian en la cantidad de almacenamiento ofrecido, herramientas para la administración en equipo y por el coste de los servicios. De todas las versiones, nos vamos a enfocar en un producto en concreto, *Dropbox Business* [^20], ya que requiere más seguridad que las otras versiones de Dropbox.
 
 ### Seguridad de DropBox Business
 
-A continuacion se presenta la arquitectura de la infraestructura de Dropbox y las diferentes capas de seguridad \cite{sec_architecture}.
+A continuacion se presenta la arquitectura de la infraestructura de Dropbox y las diferentes capas de seguridad [^21].
 
 #### Descripción de la arquitectura de Dropbox Business}
 
-Dropbox ha sido diseñado con varias capas de protección que se adaptan a las diferentes interfaces como el escritorio, el sitio web, móviles y aplicaciones de terceros vinculadas a Dropbox. Todos estos clientes se conectan a servidores seguros que proporcionan acceso a los archivos, de manera que estos se puedan modificar o compartir de forma segura. La figura \ref{fig:arquitectura} muestra la arquitectura de la infraestructura de Dropbox.
+Dropbox ha sido diseñado con varias capas de protección que se adaptan a las diferentes interfaces como el escritorio, el sitio web, móviles y aplicaciones de terceros vinculadas a Dropbox. Todos estos clientes se conectan a servidores seguros que proporcionan acceso a los archivos, de manera que estos se puedan modificar o compartir de forma segura. La siguiente figura muestra la arquitectura de la infraestructura de Dropbox.
 
 
 ![Img][im2]
@@ -178,10 +178,13 @@ Dropbox ha sido diseñado con varias capas de protección que se adaptan a las d
 A continuación vamos a ver los diferentes servicios de esta arquitectura y cómo lo hacen seguro.
 
 ***Servicio de aplicación y cifrado.*** Este servicio procesa todas las aplicaciones de Dropbox. Cada archivo se divide en bloques, y cada bloque se codifica o se le aplica un algoritmo hash mediante un cifrado potente. Sólo se sincronizan los bloques modificados. Cuando se produce un cambio, los bloques nuevos o modificados se procesan y se transfieren al servicio de almacenamiento.
-\paragraph{Servicio de almacenamiento.} Este servicio se encarga de almacenar en bloques cifrados el contenido de los archivos de los usuarios. La recuperación  de cada bloque individual cifrado de archivos se hace mediante su valor hash y se añade una capa adicional de codificación a todos los bloques de archivos mediante un fuerte cifrado.
-***Servicio de metadatos.*** Este servicio se encarga de almacenar la información básica acerca de los archivos del usuario, y se guardan en un servicio distinto al de los bloques de archivos. Estos metadatos funcionan como índice de datos en las cuentas de los usuarios, se dividen y se replican según sea necesario para cumplir con los requisitos de disponibilidad total y rendimiento.  
+***Servicio de almacenamiento.*** Este servicio se encarga de almacenar en bloques cifrados el contenido de los archivos de los usuarios. La recuperación  de cada bloque individual cifrado de archivos se hace mediante su valor hash y se añade una capa adicional de codificación a todos los bloques de archivos mediante un fuerte cifrado.
 
-***Servicio de notificaciones.*** Este servicio se encarga de controlar si se producen cambios en las cuentas de Dropbox y notificarlos. Con este servicio el cliente puede seguir los cambios en tiempo real y detectar si un cambio ha sido hecho por una persona autorizada o no.
+***Servicio de metadatos.***
+Este servicio se encarga de almacenar la información básica acerca de los archivos del usuario, y se guardan en un servicio distinto al de los bloques de archivos. Estos metadatos funcionan como índice de datos en las cuentas de los usuarios, se dividen y se replican según sea necesario para cumplir con los requisitos de disponibilidad total y rendimiento.
+
+***Servicio de notificaciones.***
+ Este servicio se encarga de controlar si se producen cambios en las cuentas de Dropbox y notificarlos. Con este servicio el cliente puede seguir los cambios en tiempo real y detectar si un cambio ha sido hecho por una persona autorizada o no.
 
 
 ###### Otros puntos de la seguridad de la arquitectura
@@ -193,23 +196,23 @@ Dropbox cifra los datos almacenados mediante el estándar Advanced Encryption St
 ***Comprobación de certificado.***
 	Dropbox usa un control adicional que es la fijación de certificados, este control asegura que el servicio al que se conecta el cliente es realmente quien dice ser. Este control está pensado para proteger el cliente de ataques más sofisticados por parte de ataques más avanzados.
 ***Confidencialidad directa total.***
-	Para los varios dispositivos y navegadores que usa el cliente, Dropbox usa cifrados potentes y admite confidencialidad directa total. Eso quiere decir que la clave privada de SSL no se puede utilizar para descifrar tráfico de internet que ha tenido lugar anteriormente. Con esta técnica Dropbox agrega otra capa de protección a las comunicaciones cifradas y además todos los cookies de autenticación están marcados como seguros y habilitan una seguridad de transporte HTTP estricta (HSTS\footnote{HTST -   HTTP Strict Transport Security})
-{Administración de claves.}
+	Para los varios dispositivos y navegadores que usa el cliente, Dropbox usa cifrados potentes y admite confidencialidad directa total. Eso quiere decir que la clave privada de SSL no se puede utilizar para descifrar tráfico de internet que ha tenido lugar anteriormente. Con esta técnica Dropbox agrega otra capa de protección a las comunicaciones cifradas y además todos los cookies de autenticación están marcados como seguros y habilitan una seguridad de transporte HTTP estricta, conocida como HSTS  qeue significa: HTTP Strict Transport Security
+***Administración de claves.***
 	La infraestructura de administración de claves de Dropbox está diseñada con con controles de seguridad operativa, con un acceso muy limitado a las claves y el intercambio y el almacenamiento de distribuyen para permitir el procesamiento descentralizado. Además de esto Dropbox usa un sistema interno que administra el proceso de intercambio seguro de claves públicas, de manera que las claves privadas se almacenan de forma segura.
 
 
 ###### Control y visibilidad
 
-Dropbox adapta y personaliza su servicio Dropbox Business según las demandas particulares de sus organizaciones. Dropbox ha desarrollado varias herramientas con características de control y visibilidad disponibles a través de la Consola de administración de Dropbox Business y de sus diversas interfaces de usuario \cite{sec_control}. A continuación vamos a ver estas herramientas y su forma de hacer que Dropbox Business sea seguro.\\
+Dropbox adapta y personaliza su servicio Dropbox Business según las demandas particulares de sus organizaciones. Dropbox ha desarrollado varias herramientas con características de control y visibilidad disponibles a través de la Consola de administración de Dropbox Business y de sus diversas interfaces de usuario [^22]. A continuación vamos a ver estas herramientas y su forma de hacer que Dropbox Business sea seguro.
 
 ***Gestión de acceso e identidades***
 
 
 
 * ***Integración de servicios de directorio activo.***
-Para simplificar la tarea de otorgar y anular permisos, los servicios de Dropbox Business están integrados con LDAP\footnote{ LDAP - Lightweight Directory Access Protocol (Protocolo Ligero/Simplificado de Acceso a Directorios)} o Active Directory (Directorio Activo), o utilizan uno de los proveedores de gestión de identidades.
+Para simplificar la tarea de otorgar y anular permisos, los servicios de Dropbox Business están integrados con LDAP (Lightweight Directory Access Protocol, es decir, Protocolo Ligero/Simplificado de Acceso a Directorios) o Active Directory (Directorio Activo), o utilizan uno de los proveedores de gestión de identidades.
 
-* ***Inicio de sesión único (SSO - Single Sign-On)***\cite{sso}.
+* ***Inicio de sesión único (SSO - Single Sign-On)***[^23].
 	Dropbox usa un sistema de inicio de sesión único (SSO) proporcionado por otros proveedores oficialmente respaldados, y  es un procedimiento de autenticación que permite al usuario acceder a varios servicios con una única instancia de identificación. También usa una solución propia que cumple con SAML 2.0 (Security Assertion Markup Language 2.0).
 
 * ***Verificación en dos pasos.***
@@ -257,7 +260,7 @@ Los administradores de Dropbox Business pueden generar informes de actividades e
 
 ###### Seguridad de la información
 
-Dropbox consigue mantener la confianza de sus usuarios mediante la evaluación de los riesgos y la mejora continua de la seguridad, confidencialidad, integridad y disponibilidad de los servicios que ofrecen. Entre otros, los puntos más importantes para mantener la seguridad al día son las políticas de seguridad, el control de acceso, la seguridad de la red y la administración de cambios \cite{sec_seg_inf}.
+Dropbox consigue mantener la confianza de sus usuarios mediante la evaluación de los riesgos y la mejora continua de la seguridad, confidencialidad, integridad y disponibilidad de los servicios que ofrecen. Entre otros, los puntos más importantes para mantener la seguridad al día son las políticas de seguridad, el control de acceso, la seguridad de la red y la administración de cambios [^24].
 
 
 ***Políticas de seguridad.***
@@ -268,7 +271,7 @@ Dropbox mantiene un control de acceso estricto a sus empleados, para disminuir l
 
 ***Seguridad de la red.***
 
-La seguridad de la red es uno de los puntos más importantes, por lo que Dropbox identifica y reduce los riesgos mediante pruebas y auditorías de las aplicaciones y redes, pruebas de penetración y otros aspectos de la seguridad. Además, aplican técnicas de supervisión y seguridad de la red que están diseñadas para ofrecer múltiples capas de protección y defensa.\\
+La seguridad de la red es uno de los puntos más importantes, por lo que Dropbox identifica y reduce los riesgos mediante pruebas y auditorías de las aplicaciones y redes, pruebas de penetración y otros aspectos de la seguridad. Además, aplican técnicas de supervisión y seguridad de la red que están diseñadas para ofrecer múltiples capas de protección y defensa.
 
 Dropbox emplea técnicas de protección como cortafuegos, supervisión de la red y sistemas de detección de intrusiones, garantizando la seguridad del entorno de producción y que sólo el tráfico permitido pueda llegar a la infraestructura interna.
 
@@ -284,6 +287,30 @@ Ya sabemos qué es la nube y cuáles son, en general, las ventajas y los riesgos
 
 
 [^1]:anexos/Citas&Referencias.md
+[^2]:anexos/Citas&Referencias.md
+[^3]:anexos/Citas&Referencias.md
+[^4]:anexos/Citas&Referencias.md
+[^5]:anexos/Citas&Referencias.md
+[^6]:anexos/Citas&Referencias.md
+[^7]:anexos/Citas&Referencias.md
+[^8]:anexos/Citas&Referencias.md
+[^9]:anexos/Citas&Referencias.md
+[^10]:anexos/Citas&Referencias.md
+[^11]:anexos/Citas&Referencias.md
+[^12]:anexos/Citas&Referencias.md
+[^13]:anexos/Citas&Referencias.md
+[^14]:anexos/Citas&Referencias.md
+[^15]:anexos/Citas&Referencias.md
+[^16]:anexos/Citas&Referencias.md
+[^17]:anexos/Citas&Referencias.md
+[^18]:anexos/Citas&Referencias.md
+[^19]:anexos/Citas&Referencias.md
+[^20]:anexos/Citas&Referencias.md
+[^21]:anexos/Citas&Referencias.md
+[^22]:anexos/Citas&Referencias.md
+[^23]:anexos/Citas&Referencias.md
+[^24]:anexos/Citas&Referencias.md
+
 [im1]: img/cloud.jpg
 [im2]:img/arquitectura.png
 \bibliography{bibliografia}

@@ -111,44 +111,38 @@ Título: Center for Internet Security. [Online]
   https://www.cisecurity.org/
 }
 
-[dropbox]
+[19]
 Autor: Dropbox
 Título: Dropbox. [Online]
    https://es.wikipedia.org/wiki/Dropbox
 }
 
-[dropboxbusiness]
+[20]
 Autor: Dropbox
 Título: Dropbox Business. [Online]
   https://www.dropbox.com/business
 }
 
-[sec_architecture]
+[21]
 Autor: Dropbox
 Título: Arquitectura de la infraestructura y seguridad de Dropbox. [Online]
   https://www.dropbox.com/business/trust/security/architecture
 }
 
-[sec_control]
+[22]
 Autor: Dropbox
 Título: Control y visibilidad. [Online]
   https://www.dropbox.com/business/trust/security/control-visibility
 }
 
-[sso]
+[23]
 Autor: Wikipedia
 Título: SSO . [Online]
   https://es.wikipedia.org/wiki/Single_Sign-On
 }
 
-[sec_seg_inf]
+[24]
 Autor: Dropbox
 Título: Seguridad de la información. [Online]
   https://www.dropbox.com/business/trust/security/information-security
-}
-
-[ref]
-Autor
-Título: algo. [Online]
-  www
 }
