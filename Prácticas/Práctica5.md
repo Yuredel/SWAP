@@ -47,7 +47,8 @@ sentencias para crear la BD , es decir que deberemos crear previamente la base d
 mysql -u root –p
 mysql> CREATE DATABASE ‘ejemplodb’;
 mysql> quit
-~~~
+
+~~~~
 
 Y a continuación restauramos la BD (se crearán las
 tablas en el proceso):
@@ -55,10 +56,10 @@ tablas en el proceso):
 `mysql -u root -p ejemplodb < /tmp/ejemplodb.sql`
 
 También podemos hacerlo por ssh pero también será necesario haber creado previamente la base de datos.
-mysqldump ejemplodb -u root -p | ssh equipodestino mysql
+`mysqldump ejemplodb -u root -p | ssh equipodestino mysql`
 
 
-#### Ejemplo
+####  Ejemplo
 A continuación podemos ver como se hace una copia de la Base de Datos.
 * Primero entramos en MySQL por terminal:
 
@@ -123,6 +124,17 @@ A continuación vamos a automatizar todo el proceso:
 La máquina esclavo se configurará igual solo que en el valor de server id se colocará un valor de 2, al descomentar la directiva.
 `server-id = 2`
 
+#### Crear Usuarios en la Máquina Maestra
+A continuacion en la máquina principal para crear la configuración del maestro. Entraremos en MySQL y ejecutaremos las siguientes sentencias:
+~~~~
+mysql> FLUSH PRIVILEGES;
+mysql> FLUSH TABLES;
+mysql> FLUSH TABLES WITH READ LOCK;
+~~~~
+Podemos ver la configuración ejecutando STATUS sobre la máquina:
+![Img][im12]
+
+
 
 
 
@@ -137,3 +149,4 @@ La máquina esclavo se configurará igual solo que en el valor de server id se c
 [im9]: Imagenes/P5/server.png
 [im10]: Imagenes/P5/logbin.png
 [im11]: Imagenes/P5/restart.png
+[im12]: Imagenes/P5/maestra.png
