@@ -10,16 +10,17 @@ La seguridad en la nube es un tema muy controvertido en el sector TI. En esta me
 
 #### ¿Qué es la nube?
 
-“La nube” es un término que apareció alrededor del año 2006 \cite{wiki1} \cite{comienzos} y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido
+“La nube” es un término que apareció alrededor del año 2006 \cite{wiki1} \cite{comienzos} y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido[^1]
+[^1]:gygyggy
 
- \cite{wiki2} \cite{origennube},
-[^wiki2]
-[^wiki2]:jkjjjjjjjjxzm
-  pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 \cite{wiki3}, conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como IBM \cite{wiki4}  \cite{ibmtimesharing}  o DEC \cite{wiki5} \cite{wiki6} \cite{dectimesharing}. Pero, ¿Qué es exactamente “la nube”?\\
 
-<<Traducción directa de la definición oficial del cloud computing de NIST\footnote{National Institute of Standards and technology}\cite{nist} :
+  pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 \cite{wiki3}, conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como IBM \cite{ibmtimesharing}  o DEC  \cite{dectimesharing}. Pero, ¿Qué es exactamente “la nube”?
 
-**‘Cloud computing’ es un modelo que permite el acceso ubicuo, conveniente y bajo demanda a un conjunto compartido de recursos informáticos configurables (por ejemplo: redes, servidores, almacenamiento, aplicaciones y servicios) que pueden ser rápidamente provisionados y liberados con un mínimo esfuerzo de gestión o de interacción con el proveedor de servicios.**
+
+
+> ‘Cloud computing’ es un modelo que permite el acceso ubicuo, conveniente y bajo demanda a un conjunto compartido de recursos informáticos configurables (por ejemplo: redes, servidores, almacenamiento, aplicaciones y servicios) que pueden ser rápidamente provisionados y liberados con un mínimo esfuerzo de gestión o de interacción con el proveedor de servicios.
+> Definición oficial del cloud computing de NIST (National Institute of Standards and technology)
+
 #### Tipos de nube y sus caraterísticas
 
 Según la definición oficial de NIST del cloud computing \cite{nist}, este modelo está compuesto por cinco características esenciales, tres modelos de servicio principales y cuatro modelos de despliegue.
