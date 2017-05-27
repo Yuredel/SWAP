@@ -14,7 +14,7 @@ La seguridad en la nube es un tema muy controvertido en el sector TI. En esta me
 
 
 
-[^1]:wiki
+[^1]:extras/wiki.md
 
 
   pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como * [IBM]: ibnej   o DEC  . Pero, ¿Qué es exactamente “la nube”?
