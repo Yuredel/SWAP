@@ -1,6 +1,6 @@
 ###### Viera Jasovská, Mohamed Molato & Yurena del Peso
 
-# Seguiradad en la Nube
+# Seguirdad en la Nube
 
 ## Resumen
 
@@ -19,7 +19,7 @@ La seguridad en la nube es un tema muy controvertido en el sector TI. En esta me
 
 
 
-  pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existía en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informáticas como IBM o DEC  . Pero, ¿Qué es exactamente “la nube”?
+Comúnmente, la nube,  para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existía en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informáticas como IBM o DEC  . Pero, ¿Qué es exactamente “la nube”?
 
 
 
@@ -143,9 +143,9 @@ Buenas prácticas que deberían tener en cuenta los consumidores de servicios en
 
 
 		* Cortafuegos en los puertos de acceso a la máquina virtual.
-		*  El uso de una comunicación cifrada.
-		*  La utilización de un sistema operativo reforzado para la VM.
-		*  La desconexión de los dispositivos no utilizados
+		* El uso de una comunicación cifrada.
+		* La utilización de un sistema operativo reforzado para la VM.
+		* La desconexión de los dispositivos no utilizados
 		* La comprobación de la integridad de los archivos.
 		* El uso de contraseñas seguras.
 		* El uso de copias de seguridad.
@@ -168,7 +168,7 @@ Dropbox como SaaS (Software-as-a-Service) ofrece 3 tipos de cuentas la primera e
 
 A continuacion se presenta la arquitectura de la infraestructura de Dropbox y las diferentes capas de seguridad [^21].
 
-#### Descripción de la arquitectura de Dropbox Business}
+#### Descripción de la arquitectura de Dropbox Business
 
 Dropbox ha sido diseñado con varias capas de protección que se adaptan a las diferentes interfaces como el escritorio, el sitio web, móviles y aplicaciones de terceros vinculadas a Dropbox. Todos estos clientes se conectan a servidores seguros que proporcionan acceso a los archivos, de manera que estos se puedan modificar o compartir de forma segura. La siguiente figura muestra la arquitectura de la infraestructura de Dropbox.
 
