@@ -76,7 +76,7 @@ Vemos como se ha creado la copia.
 
 * Volvemos MySQL y desbloqueamos la Base de Datos:
 
-![Img][im4]
+    ![Img][im4]
 
 ### Importar la copia desde la máquina 1.
 Desde la máquina secundaria copiaremos la base de datos mediante el comando *scp*.
@@ -132,12 +132,12 @@ Master-password = 123456
 
 ~~~~
 
-####### Máquina esclavo
+###### Máquina esclavo
 La máquina esclavo se configurará igual solo que en el valor de server id se colocará un valor de 2, al descomentar la directiva.
 
 `server-id = 2`
 
-***fotoconf***
+
 
 #### Crear Usuarios
 ######  Máquina Maestra
@@ -181,5 +181,5 @@ Para ***finalizar*** , tan solo resta volver a la máquina principal para desblo
 [im9]: Imagenes/P5/server.png
 [im10]: Imagenes/P5/logbin.png
 [im11]: Imagenes/P5/restart.png
-[im12]: Imagenes/P5/maestra.png
+[im12]: Imagenes/P5/nueva.png
 [im13]: Imagenes/P5/2maquinas.png
