@@ -56,6 +56,7 @@ tablas en el proceso):
 `mysql -u root -p ejemplodb < /tmp/ejemplodb.sql`
 
 También podemos hacerlo por ssh pero también será necesario haber creado previamente la base de datos.
+
 `mysqldump ejemplodb -u root -p | ssh equipodestino mysql`
 
 
@@ -96,13 +97,14 @@ Como se comentaba anteriormente, deberemos crear la Base de Datos en la máquia 
 ### Restaurar la Base de Datos mediante el modelo ***Maestro-Esclavo***
 A continuación vamos a automatizar todo el proceso:
 
-#### Máquina Maestra
+#### Configuración en MySQL
+###### Máquina Maestra
 * Lo primero que debemos hacer es configurar MySQL en la máquina Maestra. Para ello editaremos el fichero que encontramos en:
 `/etc/mysql/my.cnf`
 
   Según la versión, como es mi caso, también podríamos encontrar el fichero en:
 
-  `/etc/mysql/mysql.conf.d/mysqld.conf`
+  `/etc/mysql/mysql.conf.d/mysqld.cnf`
 
   * Comentamos el parámetro bind-address que sirve para que escuche a un servidor:
 
@@ -122,12 +124,24 @@ A continuación vamos a automatizar todo el proceso:
 `/etc/init.d/mysql restart`
 ![Img][im11]
 
-#### Máquina esclavo
+Para todas aquellas versiones de MySQL, superiores a 5.5, previo a cambiar la configuración del archivo habrá que ejecutar las asignaciones indicadas a continuación y luego reiniciar.
+~~~~
+Master-host = 192.168.45.140
+Master-user = usuariobd
+Master-password = 123456
+
+~~~~
+
+####### Máquina esclavo
 La máquina esclavo se configurará igual solo que en el valor de server id se colocará un valor de 2, al descomentar la directiva.
+
 `server-id = 2`
 
-#### Crear Usuarios en la Máquina Maestra
-A continuacion en la máquina principal para crear la configuración del maestro. Entraremos en MySQL y ejecutaremos las siguientes sentencias:
+***fotoconf***
+
+#### Crear Usuarios
+######  Máquina Maestra
+A continuación, en la máquina principal para crear la configuración del maestro. Entraremos en MySQL y ejecutaremos las siguientes sentencias:
 ~~~~
 mysql> FLUSH PRIVILEGES;
 mysql> FLUSH TABLES;
@@ -136,7 +150,23 @@ mysql> FLUSH TABLES WITH READ LOCK;
 Podemos ver la configuración ejecutando STATUS sobre la máquina:
 ![Img][im12]
 
+###### Máquina Esclavo
+Volvemos a la máquina secundaria para poner en marcha el esclavo. nos introducimos en Mysql y ejecutamos las siguientes instrucciones:
 
+~~~~
+CHANGE MASTER TO MASTER_HOST='ip_esclavo', MASTER_USER='esclavo', MASTER_PASSWORD='esclavo', *MASTER_LOG_FILE
+='mysql-bin.0000.3'*, *MASTER_LOG_POS=154*,
+MASTER_PORT=3306;
+~~~~
+Hay que tener especial cuidado con las variables *MASTER_LOG_POS, MASTER_LOG_FILE*, cuyos valores estaran reflejado en el STATUS de la máquina principal como se ve en la figura anterior.
+Una vez configurado el esclavo podemos activarlo mediante:
+
+`START SLAVE`
+
+A continuación se muestra como las dos máuinas funcionan cada una en el rol asignado.
+![Img][im13]
+
+Para ***finalizar*** , tan solo resta volver a la máquina principal para desbloquear las tablas y así puedan volver a introducirse datos en ella.
 
 
 
@@ -152,3 +182,4 @@ Podemos ver la configuración ejecutando STATUS sobre la máquina:
 [im10]: Imagenes/P5/logbin.png
 [im11]: Imagenes/P5/restart.png
 [im12]: Imagenes/P5/maestra.png
+[im13]: Imagenes/P5/2maquinas.png
