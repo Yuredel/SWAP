@@ -93,3 +93,28 @@ Podemos ver el aspecto del fichero en la   imagen:
 
 ![Img][im8]
 [im8]: Imagenes/P6/fstab.png
+
+Para comprobar que el proceso se realizó con éxito, reiniciamos el sistema y volvemos a ejecutar `sudo mount`.
+Podemos ver en la imagen como el disco aparece montado en `/dev/md127`
+
+
+![Img][im9]
+[im9]: Imagenes/P6/rebootMount.png
+
+### Simulación de un fallo
+Usaremos de nuevo la herramienta *mdadn* para, esta vez, simular un fallo de disco, Lo haremos ejecutando por terminal:
+`sudo mdadm --manage --ser-faulty /dev/md127 /dev/sdb`
+
+A continuación chequeamos los detalles del disco con:
+
+`sudo mdadm --detail /dev/md127`
+
+ Podemos ver en la siguiente imagen como, tras la ejecución de los comandos, el disco identificado como *sdb* ha caído.
+
+ ![Img][im10]
+ [im10]: Imagenes/P6/fallo1.png
+
+Aún así comprobamos que aún se puede acceder a */dat*
+
+![Img][im1]
+[im1]: Imagenes/P6/dat.png
