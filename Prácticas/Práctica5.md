@@ -45,7 +45,7 @@ Es importante destacar que la copia de seguridad tiene formato de texto plano,pe
 sentencias para crear la BD , es decir que deberemos crear previamente la base de datos en la máquina secundaria
 ~~~~
 mysql -u root –p
-mysql> CREATE DATABASE ‘ejemplodb’;
+mysql> CREATE DATABASE ‘contactos’;
 mysql> quit
 
 ~~~~
@@ -53,11 +53,11 @@ mysql> quit
 Y a continuación restauramos la BD (se crearán las
 tablas en el proceso):
 
-`mysql -u root -p ejemplodb < /tmp/ejemplodb.sql`
+`mysql -u root -p contactos < /tmp/contactos.sql`
 
 También podemos hacerlo por ssh pero también será necesario haber creado previamente la base de datos.
 
-`mysqldump ejemplodb -u root -p | ssh equipodestino mysql`
+`mysqldump contactos -u root -p | ssh ip_equipodestino mysql`
 
 
 ####  Ejemplo
@@ -154,16 +154,14 @@ Podemos ver la configuración ejecutando STATUS sobre la máquina:
 Volvemos a la máquina secundaria para poner en marcha el esclavo. nos introducimos en Mysql y ejecutamos las siguientes instrucciones:
 
 ~~~~
-CHANGE MASTER TO MASTER_HOST='ip_esclavo', MASTER_USER='esclavo', MASTER_PASSWORD='esclavo', *MASTER_LOG_FILE
-='mysql-bin.0000.3'*, *MASTER_LOG_POS=154*,
-MASTER_PORT=3306;
+CHANGE MASTER TO MASTER_HOST='ip_esclavo', MASTER_USER='esclavo', MASTER_PASSWORD='esclavo', *MASTER_LOG_FILE*='mysql-bin.0000.3', *MASTER_LOG_POS*=154,MASTER_PORT=3306;
 ~~~~
-Hay que tener especial cuidado con las variables *MASTER_LOG_POS, MASTER_LOG_FILE*, cuyos valores estaran reflejado en el STATUS de la máquina principal como se ve en la figura anterior.
+Hay que tener especial cuidado con las variables *MASTER_LOG_POS*, *MASTER_LOG_FILE*, cuyos valores estarán reflejado en el STATUS de la máquina principal como se ve en la figura anterior.
 Una vez configurado el esclavo podemos activarlo mediante:
 
 `START SLAVE`
 
-A continuación se muestra como las dos máuinas funcionan cada una en el rol asignado.
+A continuación se muestra como las dos máquinas funcionan cada una en el rol asignado.
 ![Img][im13]
 
 Para ***finalizar*** , tan solo resta volver a la máquina principal para desbloquear las tablas y así puedan volver a introducirse datos en ella.
