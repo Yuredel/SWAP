@@ -154,7 +154,7 @@ Podemos ver la configuración ejecutando STATUS sobre la máquina:
 Volvemos a la máquina secundaria para poner en marcha el esclavo. nos introducimos en Mysql y ejecutamos las siguientes instrucciones:
 
 ~~~~
-CHANGE MASTER TO MASTER_HOST='ip_esclavo', MASTER_USER='esclavo', MASTER_PASSWORD='esclavo', *MASTER_LOG_FILE*='mysql-bin.0000.3', *MASTER_LOG_POS*=154,MASTER_PORT=3306;
+CHANGE MASTER TO MASTER_HOST='ip_esclavo', MASTER_USER='esclavo', MASTER_PASSWORD='esclavo', MASTER_LOG_FILE='mysql-bin.0000.3', MASTER_LOG_POS=154,MASTER_PORT=3306;
 ~~~~
 Hay que tener especial cuidado con las variables *MASTER_LOG_POS*, *MASTER_LOG_FILE*, cuyos valores estarán reflejado en el STATUS de la máquina principal como se ve en la figura anterior.
 Una vez configurado el esclavo podemos activarlo mediante:
