@@ -31,7 +31,7 @@ Comúnmente, la nube,  para referenciar un conjunto de servicios informáticos o
 
 Según la definición oficial de NIST del cloud computing \cite{nist}, este modelo está compuesto por cinco características esenciales, tres modelos de servicio principales y cuatro modelos de despliegue.
 
-###### Características esenciales}
+###### Características esenciales
 
 Las características esenciales del cloud computing son[^3] [^4]:
 
@@ -56,7 +56,7 @@ Los principales modelos de servicio del cloud computing son [^3] [^4]:
 
 ***Platform as a Service (PaaS):*** el modelo consiste en proporcionar al consumidor la habilidad de desplegar en una infraestructura cloud aplicaciones creadas usando distintos lenguajes de programación, librerías, servicios o herramientas soportadas por el proveedor. De nuevo, el consumidor no tiene control sobre la infraestructura cloud del proveedor, pero puede gestionar los despliegues y la configuración del entorno de despliegue en el cual se van a ejecutar sus aplicaciones. Heroku [^7] y [^8]son ejemplos de plataformas como servicio.
 
-***Infrastructure as a Service (IaaS):*** el modelo consiste en proporcionar al consumidor recursos de procesamiento, almacenamiento, redes o otros recursos computacionales fundamentales en los cuales el consumidor pueda desplegar y ejecutar software arbitrario, el cual puede incluir sistemas operativos u otro tipo de aplicaciones. El consumidor no tiene control sobre la infraestructura cloud del proveedor, pero tiene control sobre los sistemas operativos y los recursos donde estos se ejecutan. Microsoft Azure [^9] es un ejemplo de este modelo de servicio.\\
+***Infrastructure as a Service (IaaS):*** el modelo consiste en proporcionar al consumidor recursos de procesamiento, almacenamiento, redes o otros recursos computacionales fundamentales en los cuales el consumidor pueda desplegar y ejecutar software arbitrario, el cual puede incluir sistemas operativos u otro tipo de aplicaciones. El consumidor no tiene control sobre la infraestructura cloud del proveedor, pero tiene control sobre los sistemas operativos y los recursos donde estos se ejecutan. Microsoft Azure [^9] es un ejemplo de este modelo de servicio.
 
 Entre los proveedores de servicios en la nube más conocidos hoy en día se encuentran Amazon (Amazon Web Services) [^10], Microsoft (Microsoft Azure)[^9], Google (Google Cloud Platform) [^11] e IBM (IBM Cloud) [^12], que ofrecen los tres modelos de servicio previamente mencionados, tal y como se puede observar en la siguiente figura.
 
@@ -214,7 +214,7 @@ Dropbox adapta y personaliza su servicio Dropbox Business según las demandas pa
 * ***Integración de servicios de directorio activo.***
 Para simplificar la tarea de otorgar y anular permisos, los servicios de Dropbox Business están integrados con LDAP (Lightweight Directory Access Protocol, es decir, Protocolo Ligero/Simplificado de Acceso a Directorios) o Active Directory (Directorio Activo), o utilizan uno de los proveedores de gestión de identidades.
 
-* ***Inicio de sesión único (SSO - Single Sign-On)***[^23].
+* ***Inicio de sesión único (SSO - Single Sign-On).*** [^23].
 	Dropbox usa un sistema de inicio de sesión único (SSO) proporcionado por otros proveedores oficialmente respaldados, y  es un procedimiento de autenticación que permite al usuario acceder a varios servicios con una única instancia de identificación. También usa una solución propia que cumple con SAML 2.0 (Security Assertion Markup Language 2.0).
 
 * ***Verificación en dos pasos.***
