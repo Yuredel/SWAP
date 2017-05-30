@@ -164,7 +164,11 @@ Una vez configurado el esclavo podemos activarlo mediante:
 A continuación se muestra como las dos máquinas funcionan cada una en el rol asignado.
 ![Img][im13]
 
-Para ***finalizar*** , tan solo resta volver a la máquina principal para desbloquear las tablas y así puedan volver a introducirse datos en ella.
+Para ***finalizar*** , tan solo resta volver a la máquina principal para desbloquear las tablas mediante el comando:
+`UNLOCK TABLES`
+
+De esta forma ya podemos introducir datos en la máquina principal(Mestro) y veremos como se actualizan en nuestra máquina secundaria(Esclavo).
+![Img][im14]
 
 
 
@@ -181,3 +185,4 @@ Para ***finalizar*** , tan solo resta volver a la máquina principal para desblo
 [im11]: Imagenes/P5/restart.png
 [im12]: Imagenes/P5/nueva.png
 [im13]: Imagenes/P5/2maquinas.png
+[im14]: Imagenes/P5/fin.png
