@@ -29,7 +29,7 @@ Comúnmente, la nube,  para referenciar un conjunto de servicios informáticos o
 
 #### Tipos de nube y sus caraterísticas
 
-Según la definición oficial de NIST del cloud computing \cite{nist}, este modelo está compuesto por cinco características esenciales, tres modelos de servicio principales y cuatro modelos de despliegue.
+Según la definición oficial de NIST del cloud computing [^3], este modelo está compuesto por cinco características esenciales, tres modelos de servicio principales y cuatro modelos de despliegue.
 
 ###### Características esenciales
 
@@ -193,12 +193,16 @@ Este servicio se encarga de almacenar la información básica acerca de los arch
 
 ***Centros de datos.***
 	Dropbox aloja los sistemas corporativos y de producción en centros de datos de terceros y proveedores de servicios gestionados y situados en los Estados Unidos. Aquí la seguridad se hace por parte de estos proveedores externos, que son los responsables de controlar sus instalaciones, pero, como lo hemos comentado anteriormente, las dos partes tienen que cumplir el acuerdo previamente establecido y las reglas exigidas por el cliente que en este caso es Dropbox.
+
 ***Cifrado.***
 Dropbox cifra los datos almacenados mediante el estándar Advanced Encryption Standard (AES) de 256 bits, y para la transferencia de datos usa las tecnologías Secure Sockets Layer (SSL)/Transport Layer Security (TLS) creando un túnel seguro protegido por un cifrado con Advanced Encryption Standard (AES) de 128 bits o superior para proteger los datos en tránsito entre las aplicaciones de Dropbox y sus servidores.
+
 ***Comprobación de certificado.***
 	Dropbox usa un control adicional que es la fijación de certificados, este control asegura que el servicio al que se conecta el cliente es realmente quien dice ser. Este control está pensado para proteger el cliente de ataques más sofisticados por parte de ataques más avanzados.
+
 ***Confidencialidad directa total.***
-	Para los varios dispositivos y navegadores que usa el cliente, Dropbox usa cifrados potentes y admite confidencialidad directa total. Eso quiere decir que la clave privada de SSL no se puede utilizar para descifrar tráfico de internet que ha tenido lugar anteriormente. Con esta técnica Dropbox agrega otra capa de protección a las comunicaciones cifradas y además todos los cookies de autenticación están marcados como seguros y habilitan una seguridad de transporte HTTP estricta, conocida como HSTS  qeue significa: HTTP Strict Transport Security
+	Para los varios dispositivos y navegadores que usa el cliente, Dropbox usa cifrados potentes y admite confidencialidad directa total. Eso quiere decir que la clave privada de SSL no se puede utilizar para descifrar tráfico de internet que ha tenido lugar anteriormente. Con esta técnica Dropbox agrega otra capa de protección a las comunicaciones cifradas y además todos los cookies de autenticación están marcados como seguros y habilitan una seguridad de transporte HTTP estricta, conocida como HSTS  qeue significa: HTTP Strict Transport Security.
+	
 ***Administración de claves.***
 	La infraestructura de administración de claves de Dropbox está diseñada con con controles de seguridad operativa, con un acceso muy limitado a las claves y el intercambio y el almacenamiento de distribuyen para permitir el procesamiento descentralizado. Además de esto Dropbox usa un sistema interno que administra el proceso de intercambio seguro de claves públicas, de manera que las claves privadas se almacenan de forma segura.
 
