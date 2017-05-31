@@ -8,9 +8,9 @@
 La seguridad en la nube es un tema muy controvertido en el sector TI. En esta memoria se tratan los principales aspectos de la seguridad en la nube, empezando por una breve descripción de lo que es la nube, los diferentes tipos de la nube, los servicios que ofrece y por último su modelo de despliegue. Después de esta pequeña introducción al mundo de la nube nos centramos en la seguridad en la nube, repasando la principales y más frecuentes amenazas en la nube, para finalmente llegar a algunas buenas prácticas (best practices) para evitarlas. A continuación para concretar nuestro trabajo de forma realista vamos a ver un caso particular de Dropbox Business donde veremos como maneja/previene las amenazas y cual son sus soluciones para tener una buena seguridad.
 
 
-### Introducción al Cloud Computing
+## Introducción al Cloud Computing
 
-#### ¿Qué es la nube?
+### ¿Qué es la nube?
 
 “La nube” es un término que apareció alrededor del año 2006  y que se va extendiendo cada vez más dentro del entorno de la tecnología de la información. El origen del término de “cloud computing” es desconocido  , pero se usa comúnmente para referenciar un conjunto de servicios informáticos ofrecidos a través de internet. Este concepto ya existia en los años 1970 , conocido como recursos de tiempo compartido y ofrecido por las grandes empresas informaticas como IBM[^1]  o DEC[^2] . Pero, ¿Qué es exactamente “la nube”?
 
@@ -27,11 +27,11 @@ Comúnmente, la nube,  para referenciar un conjunto de servicios informáticos o
 
 > Definición oficial del cloud computing de NIST (National Institute of Standards and technology)
 
-#### Tipos de nube y sus caraterísticas
+### Tipos de nube y sus caraterísticas
 
 Según la definición oficial de NIST del cloud computing [^3], este modelo está compuesto por cinco características esenciales, tres modelos de servicio principales y cuatro modelos de despliegue.
 
-###### Características esenciales
+#### Características esenciales
 
 Las características esenciales del cloud computing son[^3] [^4]:
 
@@ -64,7 +64,7 @@ Entre los proveedores de servicios en la nube más conocidos hoy en día se encu
 
 
 
-###### Modelos de despliegue
+#### Modelos de despliegue
 
 Los modelos de despliegue del cloud computing son:
 * El modelo de nube privada.
@@ -75,11 +75,11 @@ Los modelos de despliegue del cloud computing son:
 Los dos modelos más comunes son la nube privada y la nube pública. La nube pública vende servicios en Internet a cualquier tipo de consumidor. Las nubes privadas son redes o centros de datos que pertenecen a una organización y que ofrece servicios a un número limitado de personas. Sea privada o pública, el objetivo de la computación en la nube es ofrecer acceso a recursos de computación y servicios de TI de forma sencilla y escalable.
 
 
-### Implicaciones de la Seguridad en la nube
+## Implicaciones de la Seguridad en la nube
 
 Los beneficios de la computación en la nube son claros: elasticidad, escalabilidad y pago por uso, pero muchos debaten si la nube es un entorno lo suficientemente seguro para los datos sensibles. La seguridad de los datos en la nube es un tema muy controvertido en el sector TI, donde algunos creen que la nube es más segura que los ambientes internos de una organización, mientras que otros creen lo contrario. Debido a la complejidad del cloud computing, el debate sobre la seguridad en la nube no es tan sencillo, pero una cosa es cierta: no importa si se trata de una nube pública, privada o híbrida, la seguridad es esencial, y los CSPs(Cloud Service Provider, proveedor de servicios cloud), deben asegurar sus infraestructuras [^13].
 
-#### Amenazas en la nube
+### Amenazas en la nube
 
 Al trasladarse a la nube, tanto los proveedores de servicios en la nube como las empresas que usan dichos servicios tienen que hacer frente a las amenazas de la computación en la nube, para disminuir los riesgos que suponen el uso de estos servicios. Según varios artículos en la web , algunas de las amenazas de seguridad en la computación en la nube son las siguientes[^14][^15][^16]:
 
@@ -107,11 +107,11 @@ Al trasladarse a la nube, tanto los proveedores de servicios en la nube como las
 ***Falta de comprensión.*** Los consumidores necesitan tener los conceptos de la nube bien asimilados y saber a qué se enfrentan a la hora de trasladar sus servicios a la nube, y al establecer un acuerdo con un CSP deberían tener claras las respuestas a ciertas preguntas como: ¿De qué servicios se encarga el CSP y de qué servicios se encarga el consumidor? ¿Cuál sería la estrategia de respaldo proporcionada por el CSP? ¿Y en el caso que el CSP no proporcione ninguna, cuál sería la estrategia adoptada por el consumidor? ¿Los usuarios entienden las amenazas? ¿Saben defenderse adecuadamente contra las amenazas de seguridad en la nube? Todos estos aspectos tienen que ser  contemplados por el consumidor antes de trasladarse a la nube.
 
 
-#### Buenas prácticas para evitar las amenazas en la nube.
+### Buenas prácticas para evitar las amenazas en la nube.
 
 Como podemos ver en el apartado anterior existen dos actores principales que actúan para conseguir una buena seguridad en la nube: los proveedores y los consumidores. A continuación vamos a describir lo que deberían hacer o asegurar cada uno de ellos [^17].
 
-###### Proveedores
+#### Proveedores
 
 Buenas prácticas que deben tener en cuenta los proveedores:
 
@@ -125,7 +125,7 @@ Buenas prácticas que deben tener en cuenta los proveedores:
 
 
 
-###### Consumidores
+#### Consumidores
 
 Buenas prácticas que deberían tener en cuenta los consumidores de servicios en la nube:
 
@@ -157,7 +157,7 @@ Buenas prácticas que deberían tener en cuenta los consumidores de servicios en
 
 
 
-### Caso particular
+## Caso particular
 
 Después de haber visto la descripción del cloud computing, su funcionamiento y los diferentes servicios que ofrece, y haber identificado varias amenazas y las soluciones a ellas, tanto en los proveedores como en los clientes, nos centrarnos en el estudio de un caso particular para ver cómo se aplica todo lo presentado anteriormente en la vida real. Hemos elegido *Dropbox* [¹9], ya que es una aplicación cotidiana para muchos de los usuarios del internet.
 
@@ -189,7 +189,7 @@ Este servicio se encarga de almacenar la información básica acerca de los arch
  Este servicio se encarga de controlar si se producen cambios en las cuentas de Dropbox y notificarlos. Con este servicio el cliente puede seguir los cambios en tiempo real y detectar si un cambio ha sido hecho por una persona autorizada o no.
 
 
-###### Otros puntos de la seguridad de la arquitectura
+#### Otros puntos de la seguridad de la arquitectura
 
 ***Centros de datos.***
 	Dropbox aloja los sistemas corporativos y de producción en centros de datos de terceros y proveedores de servicios gestionados y situados en los Estados Unidos. Aquí la seguridad se hace por parte de estos proveedores externos, que son los responsables de controlar sus instalaciones, pero, como lo hemos comentado anteriormente, las dos partes tienen que cumplir el acuerdo previamente establecido y las reglas exigidas por el cliente que en este caso es Dropbox.
@@ -202,12 +202,12 @@ Dropbox cifra los datos almacenados mediante el estándar Advanced Encryption St
 
 ***Confidencialidad directa total.***
 	Para los varios dispositivos y navegadores que usa el cliente, Dropbox usa cifrados potentes y admite confidencialidad directa total. Eso quiere decir que la clave privada de SSL no se puede utilizar para descifrar tráfico de internet que ha tenido lugar anteriormente. Con esta técnica Dropbox agrega otra capa de protección a las comunicaciones cifradas y además todos los cookies de autenticación están marcados como seguros y habilitan una seguridad de transporte HTTP estricta, conocida como HSTS  qeue significa: HTTP Strict Transport Security.
-	
+
 ***Administración de claves.***
 	La infraestructura de administración de claves de Dropbox está diseñada con con controles de seguridad operativa, con un acceso muy limitado a las claves y el intercambio y el almacenamiento de distribuyen para permitir el procesamiento descentralizado. Además de esto Dropbox usa un sistema interno que administra el proceso de intercambio seguro de claves públicas, de manera que las claves privadas se almacenan de forma segura.
 
 
-###### Control y visibilidad
+#### Control y visibilidad
 
 Dropbox adapta y personaliza su servicio Dropbox Business según las demandas particulares de sus organizaciones. Dropbox ha desarrollado varias herramientas con características de control y visibilidad disponibles a través de la Consola de administración de Dropbox Business y de sus diversas interfaces de usuario [^22]. A continuación vamos a ver estas herramientas y su forma de hacer que Dropbox Business sea seguro.
 
@@ -264,7 +264,7 @@ Las acciones del administrador son muy variadas y algunos de los objetivos que t
 
 Los administradores de Dropbox Business pueden generar informes de actividades en cualquier momento para tener un control y poder auditar todas las actividades que los usuarios realizan. Los informes de actividad proporcionan, entre otros puntos, datos sobre cambios en la configuración de contraseñas o verificación en dos pasos (aunque no pueden ver las contraseñas de los usuarios), y sobre los inicios de sesión (tanto correctos como intentos fallidos), sobre la vinculación de aplicaciones de terceros a las cuentas Dropbox, sobre el uso compartido de las carpetas, ficheros y enlaces a estos. Además, cada usuario puede ver las actividades realizadas sobre sus archivos y carpetas desde la página de eventos del usuario.
 
-###### Seguridad de la información
+#### Seguridad de la información
 
 Dropbox consigue mantener la confianza de sus usuarios mediante la evaluación de los riesgos y la mejora continua de la seguridad, confidencialidad, integridad y disponibilidad de los servicios que ofrecen. Entre otros, los puntos más importantes para mantener la seguridad al día son las políticas de seguridad, el control de acceso, la seguridad de la red y la administración de cambios [^24].
 
@@ -286,7 +286,7 @@ Dropbox emplea técnicas de protección como cortafuegos, supervisión de la red
 Todos los cambios de la infraestructura o aplicaciones están previamente autorizados mediante una política de administración de cambios antes su implementación en las aplicaciones. Todos los cambios están gestionados y guardados mediante un sistema de control de versiones y deben someterse a procedimientos de pruebas de control de calidad para verificar que cumplen los requisitos de seguridad. Todos los cambios de código están revisados manualmente pasan un control de calidad.
 
 
-### Conclusiones
+## Conclusiones
 
 Ya sabemos qué es la nube y cuáles son, en general, las ventajas y los riesgos de usar los servicios que ofrece. Todos los métodos que hemos visto para implementar la seguridad deberían hacer la nube un entorno lo suficientemente seguro para sobrepasar cualquier tipo de incidente, aunque el error humano puede provocar brechas en la seguridad. Remarcamos que la seguridad en la nube debería ser una relación entre los proveedores y los consumidores, donde cada uno tiene la responsabilidad de asegurar su entorno. Teniendo esto en cuenta, los servicios ofrecidos por la nube deberían ser mucho más flexibles y seguros que los métodos tradicionales. Pero como cada proveedor es diferente, tenemos que evaluar los áreas de seguridad que ofrecen antes de migrar a la nube.
 
